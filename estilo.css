@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body 
+{
+    font-size: 100%;
+    background-color: #ffffff;
+}
+
+
+
+/*COMEÇO DO CABEÇALHO*/
+.cabecalho-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 5px; */
+    width: 50%;
+    height: 7rem;
+}
+.cabecalho-logo /* Logo AION*/
+{
+    height: 72px;
+    padding-right: 5em;
+
+}
+.cabecalho-menu 
+{
+    display: flex;
+    gap: 50px;
+}
+.cabecalho-menu-itens
+{
+    font-family: 'Raleway', sans-serif;
+    color: #1b1a1b;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 19px;
+}
+@media (max-width: 780px)
+{
+    .cabecalho-nav
+    {
+        width: 100%;
+    }
+    .cabecalho-logo /* Logo AION*/
+    {
+        height: 69px;
+        padding-right: 1.5em;
+
+    }
+    .cabecalho-menu 
+    {
+        display: flex;
+        gap: 39px;
+    }
+    .cabecalho-menu-itens
+    {
+        color: aqua;
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 620px)
+{
+    .cabecalho-nav
+    {
+        width: 100%;
+    }
+    .cabecalho-logo /* Logo AION*/
+    {
+        height: 60px;
+        padding-right: 0.5em;
+
+    }
+    .cabecalho-menu 
+    {
+        display: flex;
+        gap: 20px;
+        font-size: 15px;
+    }
+    .cabecalho-menu-itens
+    {
+        color: rgb(247, 0, 255);
+        font-size: 15px;
+    }
+
+}
+
+
+/*PARTE DA APRESENTAÇÃO DO SITE*/
+.conteudo
+{
+    display: flex;
+    width: 100%;
+}
+.divisao-sessao1  
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 3em;
+    padding-right: 5em;
+}
+.conteudo-da-sessao-1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 18%;
+}
+.escrito-titulo-conhecaNossa 
+{
+    font-family: 'Raleway', sans-serif;
+    color:#693786;
+    font-weight: 600;
+    font-size: 50px;
+    padding-left: 1.3em;
+    top: 4em;
+}
+
+.escrito-titulo-Empresa
+{
+    font-family: 'Raleway', sans-serif;
+    color: #3ec9c0;
+    font-weight: 700;
+    font-size: 50px;
+    padding-left: 1.3em;
+    top: 4em;
+}
+.flex-container-icones
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16em;
+    left: 1.5em;
+    align-self: center;
+}
+.conteudo-escrito 
+{
+    font-family: 'Dosis', sans-serif;
+    color: #1b1a1b;
+    text-align: justify;
+    font-size: 27px;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding-left: 2.9em;
+    margin-top: 2rem;
+}
+.flex-container-botao 
+{
+    align-self: center;
+    margin-top: 6rem;
+    border: 1px solid #7322a6;
+    background-color: #7322a6;
+    width: 30%;
+    border-style: none;
+    height: 3.8rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding: 0.2rem;
+}
+.flex-container-botao:hover
+{ 
+    background-color: white;
+    border: 1px solid #7322a6;
+    color: #7322a6;
+
+}
+
+
+
+
+
+
