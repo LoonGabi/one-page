@@ -8,16 +8,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
 }
 body 
 {
-    font-size: 100%;
     background-color: #ffffff;
 }
 
 
-/*COMEÇO DO CABEÇALHO*/
-header
+/*CABEÇALHO*/
+.header
 {
     display:flex;
     flex-direction: row;
@@ -25,11 +25,19 @@ header
     align-items: center;  
     height: 6rem;  
 }
-header img /*LOGO*/
+.box-img-header /*LOGO*/
 {
-    height: 6rem;
-    padding: 1%;
+    width: 10rem;
+    height: 5rem;
+    margin-right: 3rem;
 }
+.box-img-header img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 ul
 {
     display: flex;
@@ -40,20 +48,50 @@ ul
     font-weight: 600;
     font-size: 1.2rem;
 }
-a
+.item-menu a
 {
     text-decoration: none;
-    list-style-type: none;
 }
 
+
+
+
+
+
+
 /*Apresentação da Empresa-Primeira parte do site*/
+.bloco-organizador-da-parte-apresentacao
+{
+    display: flex;
+    background-image:url("img/img-sessao-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caixa-organizadora-para-separar-apresentacao-1
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+}
+.caixa-organizadora-para-separar-apresentacao-2
+{
+    height: 100vh;
+}
 .apresentacao
 {
     display: flex;
     flex-direction: column; 
-    width: 50%;
-    margin-top: 8rem;
-    margin-left: 6%;
+    align-items: center;
+    width: 100%;
+    padding: 8rem; 
+    padding-bottom: 3rem;   
+}
+.espacinho-para-titulos-apresentacao
+{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
 }
 .titulo-conhecaNossa
 {
@@ -61,44 +99,40 @@ a
     color:#693786;
     font-weight: 600;
     font-size: 50px;
-    line-height: 0%;
-    align-items:flex-start; 
 }
 .titulo-Empresa
 {
     font-family: 'Raleway', sans-serif;
     color: #3ec9c0;
     font-weight: 700;
-    font-size: 50px;
-    align-items:flex-start; 
+    font-size: 50px; 
 }
 .conteudo-apresentacao
 {
     font-family: 'Dosis', sans-serif;
     color: #1b1a1b;
     text-align: justify;
-    font-size: 27px;
-    word-spacing: 2px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 2em;
     font-weight: 500;
-    align-items:flex-start; 
+    margin-top: 2rem;
+    align-self: flex-start;
 }
 .apresentacao button
 {
-    align-self: center;
     color: #ffffff;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     border: 1px solid #7322a6;
     background-color: #7322a6;
-    border-style: none;
-    height: 3.8rem;
     border-radius: 0.5rem;
     padding: 0.2rem;
     margin-top: 10%;
-    width: 30%;
+    height: 3rem;
+    width: 11rem;
     transition: all 0.5s ease;  
+    cursor: pointer;
 }
 .apresentacao button:hover
 { 
@@ -112,23 +146,20 @@ a
     flex-direction: row;
     justify-content: center;
     margin-top: 19%;
-    margin-bottom: 2%;
+    gap: 0.2rem;
 }
 .imagens-icones img
 {
-    width: 4rem;
-    height: 4rem;
-}
-/* .img-da-apresentacao
-{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 .img-apresentacao
 {
-    width: 20rem;
-} */
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
 
 
 
@@ -143,7 +174,6 @@ a
     flex-direction: column; 
     width: 100%;
     background-color: #572873;
-    height: 29rem;
 }
 .titulo-sobre
 {
@@ -154,7 +184,6 @@ a
     font-size: 25px;
     justify-content:center; 
     margin-top: 5%;
-    line-height: 0%;
 }
 .titulo-saiba
 {
@@ -170,13 +199,11 @@ a
     display: flex;
     justify-content:center;
     text-align: center;
-    margin: 10%;
-    margin-top: 2%;
+    margin: 6rem 10rem 8rem 10rem;
     font-family: 'Dosis', sans-serif;
     color: #fff;
-    font-size: 25px;
-    word-spacing: 2px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 2em;
     font-weight: 400;    
 }
 
@@ -193,13 +220,15 @@ a
     flex-direction: row; 
     width: 100%;
     background-color: #ffffff;
-    height: 27rem;
 }
 .organizador-para-buscamos-1
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    width: 50vw;
+    padding: 5rem;
+    padding-top: 2rem;
 }
 .titulo-sobre-b
 {
@@ -208,46 +237,40 @@ a
     color:#000;
     font-weight: 300;
     font-size: 25px;
-    justify-content:left; 
+    align-self: flex-start;
     margin-top: 4%;
-    line-height: 0%;
-    margin-left: 3%;
 }
 .titulo-buscamos
 {
     display: flex;
     font-family: 'Raleway', sans-serif;
     color: #000;
-    margin-left: 3%;
     font-weight: 400;
     font-size: 50px;
-    justify-content:left; 
+    align-self: flex-start;
 }
 .conteudo-buscamos
 {
-    display: flex;
-    justify-content:left;
-    width: 45rem;
     text-align: justify;
-    margin-left: 3%;
-    margin-top: 1%;
+    margin-top: 2rem;
     font-family: 'Dosis', sans-serif;
     color: #000;
-    font-size: 25px;
-    word-spacing: 2px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 2em;
     font-weight: 400; 
 }
 .organizador-para-buscamos-2
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50vw;
+    height: 60vh;
 }
 .img-buscamos
 {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
@@ -263,6 +286,12 @@ a
     width: 100%;
     height: 80rem;
     background-image: url(img/fundo-sessao-4.jpg);
+}
+.espacinho-para-titulos-integrantes
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
 }
 .titulo-integrantes
 {
@@ -289,8 +318,8 @@ a
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    background-color: #3ec9c0;
     margin-top: 5%;
+    padding-bottom: 4rem;
 }
 .parte-externa
 {
@@ -398,159 +427,87 @@ a
 
 
 
-/*Parte dos Projetos que só tem um projeto*/
+/*Parte Projetos*/
 .projetos
 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     width: 100%;
     background-color: #ffffff;
-    height: 30rem;
+
 }
 .organizador-para-projetos-1
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    width: 50vw;
+    padding: 5rem;
+    padding-top: 2rem;
 }
-.titulo-projeto
+.titulo-projetos
 {
     display: flex;
     font-family: 'Raleway', sans-serif;
     color:#000;
     font-weight: 300;
     font-size: 25px;
-    justify-content:flex-start; 
+    align-self: flex-start;
     margin-top: 4%;
-    margin-left: 3%;
 }
 .titulo-veja
 {
     display: flex;
     font-family: 'Raleway', sans-serif;
     color: #000;
-    margin-left: 3%;
     font-weight: 400;
     font-size: 50px;
-    justify-content:flex-start; 
+    align-self: flex-start;
 }
-.conteudo-projeto
+.conteudo-projetos
 {
-    display: flex;
-    justify-content:center;
-    width: 45rem;
-    text-align: center;
-    margin-left: 2%;
-    margin-top: 1%;
+    text-align: justify;
+    margin-top: 2rem;
     font-family: 'Dosis', sans-serif;
     color: #000;
-    font-size: 25px;
-    word-spacing: 2px;
-    line-height: 1.5em;
+    font-size: 20px;
+    line-height: 2em;
     font-weight: 400; 
+}
+.organizador-para-projetos-2
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
+}
+.img-projeto
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .projetos button
 {
-    align-self: left;
-    margin-left: 13%;
+    
+    border: 1px solid #1d4ba0;
+    background-color: #1d4ba0;
     color: #ffffff;
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    border: 1px solid #1d4ba0;
-    background-color: #1d4ba0;
-    border-style: none;
-    height: 3.5rem;
+    font-size: 25px;
     border-radius: 0.5rem;
     padding: 0.2rem;
-    margin-top: 3%;
-    width: 12%;
+    margin-top: 3rem;
+    height: 3rem;
+    width: 11rem;
     transition: all 0.5s ease;  
+    cursor: pointer;
+    
 }
 .projetos button:hover
 { 
     background-color: white;
     border: 1px solid #1d4ba0;
     color: #1d4ba0;
-}
-.organizador-para-projetos-2
-{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.img-projeto
-{
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 780px)
-{
-    .cabecalho-nav
-    {
-        width: 100%;
-    }
-    .cabecalho-logo /* Logo AION*/
-    {
-        height: 69px;
-        padding-right: 1.5em;
-
-    }
-    .cabecalho-menu 
-    {
-        display: flex;
-        gap: 39px;
-    }
-    .cabecalho-menu-itens
-    {
-        color: aqua;
-        font-size: 18px;
-    }
-
-}
-@media (max-width: 620px)
-{
-    .cabecalho-nav
-    {
-        width: 100%;
-    }
-    .cabecalho-logo /* Logo AION*/
-    {
-        height: 60px;
-        padding-right: 0.5em;
-
-    }
-    .cabecalho-menu 
-    {
-        display: flex;
-        gap: 20px;
-        font-size: 15px;
-    }
-    .cabecalho-menu-itens
-    {
-        color: rgb(247, 0, 255);
-        font-size: 15px;
-    }
-
 }
