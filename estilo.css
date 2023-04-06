@@ -514,7 +514,53 @@ ul
 
 
 
+
+
+
+
+
 .contato
 {
     display: flex;
+    background-color: #232b5a;
+}
+.organizador-para-parte-1-do-contato
+{
+    display: flex;
+    flex-direction: column;
+}
+.titulos-do-contato
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.titulo-contato
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    font-weight: 300;
+    font-size: 25px;
+    align-self: flex-start;
+}
+.titulo-fale
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    align-self: flex-start;
+}
+form label
+{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+form input, textarea
+{
+    background-color: #232b5a;
+    border: 1px solid #fff;
 }
