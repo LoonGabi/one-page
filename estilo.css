@@ -528,6 +528,8 @@ ul
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
 }
 .titulos-do-contato
 {
@@ -554,6 +556,10 @@ ul
     font-size: 50px;
     align-self: flex-start;
 }
+form
+{
+    margin: 3rem;
+}
 form label
 {
     font-family: 'Raleway', sans-serif;
@@ -563,4 +569,38 @@ form input, textarea
 {
     background-color: #232b5a;
     border: 1px solid #fff;
+}
+.organizador-para-parte-2-do-contato
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 3rem;
+}
+.para-dar-o-traco
+{
+    border: 2px solid #fff;
+    margin: 3rem;
+}
+.para-guardar-o-texto
+{
+    padding: 3rem;
+}
+.titulo-info
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    align-self: flex-start;
+}
+.escritos-para-contato
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    align-self: flex-start;
 }
