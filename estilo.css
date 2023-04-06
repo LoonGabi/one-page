@@ -40,6 +40,11 @@ ul
     font-weight: 600;
     font-size: 1.2rem;
 }
+a
+{
+    text-decoration: none;
+    list-style-type: none;
+}
 
 /*Apresentação da Empresa-Primeira parte do site*/
 .apresentacao
@@ -92,7 +97,7 @@ ul
     border-radius: 0.5rem;
     padding: 0.2rem;
     margin-top: 10%;
-    width: 25%;
+    width: 30%;
     transition: all 0.5s ease;  
 }
 .apresentacao button:hover
@@ -124,6 +129,8 @@ ul
 {
     width: 20rem;
 } */
+
+
 
 
 
@@ -177,14 +184,22 @@ ul
 
 
 
+
+
 /*Parte O que Buscamos*/
 .oq-Buscamos
 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     width: 100%;
     background-color: #ffffff;
     height: 27rem;
+}
+.organizador-para-buscamos-1
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 .titulo-sobre-b
 {
@@ -223,12 +238,254 @@ ul
     line-height: 1.5em;
     font-weight: 400; 
 }
-.img-buscamos 
+.organizador-para-buscamos-2
 {
     display: flex;
-    height: 40rem;
-    width: 40rem;
+    flex-direction: column;
+    width: 50%;
 }
+.img-buscamos
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* PARTE INTEGRANTES*/
+.integrantes
+{
+    width: 100%;
+    height: 80rem;
+    background-image: url(img/fundo-sessao-4.jpg);
+}
+.titulo-integrantes
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    font-weight: 300;
+    font-size: 25px;
+    justify-content:center;
+}
+.titulo-conheca-nos
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    justify-content:center; 
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #3ec9c0;
+    margin-top: 5%;
+}
+.parte-externa
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 290px;
+    background-color: #ffffff;
+    border-radius: 3%;
+    transition: all 0.5s ease;
+}
+.parte-externa:hover
+{
+    transform: translateY(-0.5rem);
+    margin-left: 2px;
+}
+.primeira-fileira
+{
+    display: flex;
+    gap: 3rem;
+}
+.parte-interna-um
+{
+    border-top: 1px solid #1b1a1b;
+    border-bottom: 1px solid #1b1a1b;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #e6d0ef;
+    align-items: center;  
+}
+.segunda-fileira
+{
+    display: flex;
+    gap: 3rem;
+}
+.parte-interna-dois
+{
+    border-top: 1px solid #1b1a1b;
+    border-bottom: 1px solid #1b1a1b;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #fcd6ec;
+    align-items: center;
+}
+.terceira-fileira
+{
+    display: flex;
+    gap: 3rem;
+}
+.parte-interna-tres
+{
+    border-top: 1px solid #1b1a1b;
+    border-bottom: 1px solid #1b1a1b;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #d6ebfc;
+    align-items: center;
+}
+.icone
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+.redes
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 1%;
+}
+.image-card-integrantes
+{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    border: 2px solid #1b1a1b;
+    border-radius: 100%;
+}
+.nomes
+{
+    font-family: "Dosis";
+    font-weight: Medium 500;
+    color: #151515;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+/*Parte dos Projetos que só tem um projeto*/
+.projetos
+{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    background-color: #ffffff;
+    height: 30rem;
+}
+.organizador-para-projetos-1
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.titulo-projeto
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color:#000;
+    font-weight: 300;
+    font-size: 25px;
+    justify-content:flex-start; 
+    margin-top: 4%;
+    margin-left: 3%;
+}
+.titulo-veja
+{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    margin-left: 3%;
+    font-weight: 400;
+    font-size: 50px;
+    justify-content:flex-start; 
+}
+.conteudo-projeto
+{
+    display: flex;
+    justify-content:center;
+    width: 45rem;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-family: 'Dosis', sans-serif;
+    color: #000;
+    font-size: 25px;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 400; 
+}
+.projetos button
+{
+    align-self: left;
+    margin-left: 13%;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    border: 1px solid #1d4ba0;
+    background-color: #1d4ba0;
+    border-style: none;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-top: 3%;
+    width: 12%;
+    transition: all 0.5s ease;  
+}
+.projetos button:hover
+{ 
+    background-color: white;
+    border: 1px solid #1d4ba0;
+    color: #1d4ba0;
+}
+.organizador-para-projetos-2
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.img-projeto
+{
+    width: 100%;
+    height: 100%;
+}
+
 
 
 
