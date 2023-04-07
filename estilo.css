@@ -672,6 +672,32 @@ form button:hover
 
 
 /*Responsividade*/
+@media(max-width:1440px)
+{
+    .oq-Buscamos
+    {
+        width: 100%;
+    }
+    .organizador-para-buscamos-1
+    {
+        width: 35%;
+        padding: 2rem;
+    }
+    .organizador-para-buscamos-2
+    {
+        width: 65%;
+    }
+    .organizador-para-projetos-1
+    {
+        width: 35%;
+        padding: 2rem;
+        padding-top: 2rem;
+    }
+    .organizador-para-projetos-2
+    {
+        width: 65%;
+    }
+}
 @media(max-width:1024px)
 {
     .bloco-organizador-da-parte-apresentacao
@@ -706,6 +732,7 @@ form button:hover
     .conteudo-buscamos
     {
         text-align: center;
+        margin: 4rem;
     }
     .organizador-para-buscamos-2
     {
@@ -727,8 +754,6 @@ form button:hover
     }
     .organizador-para-projetos-1
     {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 5rem;
@@ -805,5 +830,105 @@ form button:hover
         line-height: 2.4rem;
         padding-top: 8rem;
         font-size: 15px;
+    }
+}
+@media(max-width:768px)
+{
+    .contato
+    {
+        display: flex;
+        background-color: #232b5a;
+        flex-direction: column;
+    }
+    .organizador-para-parte-form-do-contato
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 5rem;
+    }
+    .titulos-do-contato
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        width: 80%;
+        gap: 1.5rem;
+    }
+    .caixa-para-separar-os-iputs-do-textarea
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .apoio-para-organizar-os-inputs
+    {
+        display: flex;
+        flex-direction: column;
+        line-height: 5rem;
+    }
+    form input
+    {
+        width: 10rem;
+    }
+    form textarea
+    {
+        border: 1px solid #fff;
+    }
+    .apoio-para-organizar-o-button
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    form button
+    {
+        font-size: 20px;
+        border-radius: 0.5rem;
+        padding: 0.2rem;
+        margin-top: 2rem;
+        height: 3rem;
+        width: 12rem;
+    }
+    .organizador-para-parte-info-do-contato
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 3rem;
+    }
+    .para-guardar-o-texto
+    {
+        padding: 5rem;
+        padding-top: 2.5rem;
+        padding-left: 2.5rem;
+        border: none;
+        border-top: 3px solid #fff;
+    }
+    .titulo-info
+    {
+        display: flex;
+        
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 50px;
+        align-self: flex-start;
+    }
+    .escritos-para-contato
+    {
+        font-size: 25px;
+        line-height: 2.5rem;
+        padding-top: 3rem;
     }
 }
