@@ -587,11 +587,13 @@ form input
     background-color: #232b5a;
     border-bottom: 1px solid #fff;
     width: 14rem;
+    color: #fff;
 }
 form textarea
 {
     background-color: #232b5a;
     border: 1px solid #fff;
+    color: #fff;
 }
 .apoio-para-organizar-o-button
 {
@@ -659,4 +661,149 @@ form button:hover
     line-height: 2.8rem;
     padding-top: 8rem;
     
+}
+
+
+
+
+
+
+
+
+
+/*Responsividade*/
+@media(max-width:1024px)
+{
+    .bloco-organizador-da-parte-apresentacao
+    {
+        display: flex;
+        background-image:none;
+    }
+    .caixa-organizadora-para-separar-apresentacao-1
+    {
+        width: 100%;
+    }
+    .apresentacao button
+    {
+        width: 15rem;
+    }
+    .oq-Buscamos
+    {
+        width: 100%;
+    }
+    .organizador-para-buscamos-1
+    {
+        width: 100%;
+    }
+    .titulo-sobre-b
+    {
+        align-self: center;
+    }
+    .titulo-buscamos
+    {
+        align-self: center;
+    }
+    .conteudo-buscamos
+    {
+        text-align: center;
+    }
+    .organizador-para-buscamos-2
+    {
+        display: none;
+    }
+    .img-buscamos
+    {
+        display: none;
+    }
+    .cards
+    {
+        gap: 2rem;
+        margin-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .primeira-fileira, .segunda-fileira, .terceira-fileira
+    {
+        gap: 1.5rem;
+    }
+    .organizador-para-projetos-1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 5rem;
+        padding-top: 2rem;
+    }
+    .organizador-para-projetos-2
+    {
+        display: none;
+    }
+    .projetos button
+    {
+        width: 15rem;
+    }
+    .organizador-para-parte-form-do-contato
+    {
+        width: 50%;
+        margin-left: 3rem;
+    }
+    .titulos-do-contato
+    {
+        margin-top: 3rem;
+    }
+    form
+    {
+        margin-top: 2rem;
+        width: 60%;
+        gap: 1rem;
+    }
+    .caixa-para-separar-os-iputs-do-textarea
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .apoio-para-organizar-os-inputs
+    {
+        display: flex;
+        flex-direction: column;
+        line-height: 5rem;
+    }
+    form input
+    {
+        width: 8rem;
+    }
+    form textarea
+    {
+        width: 34rem;
+    }
+    .apoio-para-organizar-o-button
+    {
+        justify-content: right;
+        width: 100%;
+    }
+    form button
+    {
+        margin-top: 2rem;
+        height: 3rem;
+        width: 10rem;
+    }
+    .organizador-para-parte-info-do-contato
+    {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-left:4rem;
+    }
+    .para-guardar-o-texto
+    {
+        justify-content: left;
+        margin: 0.5rem;
+    }
+    .escritos-para-contato
+    {
+        line-height: 2.4rem;
+        padding-top: 8rem;
+        font-size: 15px;
+    }
 }
