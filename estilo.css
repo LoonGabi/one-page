@@ -529,13 +529,13 @@ ul
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 75%;
+    width: 70%;
+    margin-left: 5rem;
 }
 .titulos-do-contato
 {
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
     margin-top: 3rem;
 }
 .titulo-contato
@@ -561,17 +561,15 @@ form
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 3rem;
+    margin-top: 3rem;
     width: 80%;
     gap: 1.5rem;
-    background-color: #e6d0ef;
 }
 .caixa-para-separar-os-iputs-do-textarea
 {
     display: flex;
     flex-direction: row;
-    background-color: #438823;
-    gap: 5rem;
+    gap: 7.5rem;
 }
 .apoio-para-organizar-os-inputs
 {
@@ -588,6 +586,7 @@ form input
 {
     background-color: #232b5a;
     border-bottom: 1px solid #fff;
+    width: 14rem;
 }
 form textarea
 {
@@ -598,10 +597,13 @@ form textarea
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 form button
 {
-    border: 1px solid #232b5a;
+    border: 1px solid #ffffff;
     background-color: #232b5a;
     color: #ffffff;
     font-weight: 500;
@@ -609,12 +611,11 @@ form button
     font-size: 20px;
     border-radius: 0.5rem;
     padding: 0.2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     height: 3rem;
-    width: 8rem;
+    width: 10rem;
     transition: all 0.5s ease;  
     cursor: pointer;
-    
 }
 form button:hover
 { 
@@ -626,16 +627,16 @@ form button:hover
 {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
     margin: 3rem;
 }
 .para-guardar-o-texto
 {
     justify-content: left;
     padding: 5rem;
+    padding-top: 2.5rem;
     padding-left: 2.5rem;
     margin: 1rem;
-    background-color: antiquewhite;
     border-left: 2px solid #fff;
 }
 .titulo-info
@@ -655,7 +656,7 @@ form button:hover
     font-weight: 400;
     font-size: 20px;
     align-self: flex-start;
-    line-height: 2.5rem;
-    padding-top: 5rem;
+    line-height: 2.8rem;
+    padding-top: 8rem;
     
 }
