@@ -452,7 +452,7 @@ ul
     color:#000;
     font-weight: 300;
     font-size: 25px;
-    align-self: flex-start;
+    align-self: center;
     margin-top: 4%;
 }
 .titulo-veja
@@ -462,11 +462,11 @@ ul
     color: #000;
     font-weight: 400;
     font-size: 50px;
-    align-self: flex-start;
+    align-self: center;
 }
 .conteudo-projetos
 {
-    text-align: justify;
+    text-align: center;
     margin-top: 2rem;
     font-family: 'Dosis', sans-serif;
     color: #000;
@@ -524,7 +524,7 @@ ul
     display: flex;
     background-color: #232b5a;
 }
-.organizador-para-parte-1-do-contato
+.organizador-para-parte-form-do-contato
 {
     display: flex;
     flex-direction: column;
@@ -559,22 +559,68 @@ ul
 form
 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 3rem;
     width: 80%;
     gap: 1.5rem;
+    background-color: #e6d0ef;
+}
+.caixa-para-separar-os-iputs-do-textarea
+{
+    display: flex;
+    flex-direction: row;
+}
+.apoio-para-organizar-os-inputs
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 5rem;
 }
 form label
 {
     font-family: 'Raleway', sans-serif;
     color: #fff;
 }
-form input, textarea
+form input
+{
+    background-color: #232b5a;
+    border-bottom: 1px solid #fff;
+}
+form textarea
 {
     background-color: #232b5a;
     border: 1px solid #fff;
 }
-.organizador-para-parte-2-do-contato
+.apoio-para-organizar-o-button
+{
+    display: flex;
+    flex-direction: row;
+}
+form button
+{
+    border: 1px solid #232b5a;
+    background-color: #232b5a;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8rem;
+    transition: all 0.5s ease;  
+    cursor: pointer;
+    
+}
+form button:hover
+{ 
+    background-color: white;
+    border: 1px solid #232b5a;
+    color: #232b5a;
+}
+.organizador-para-parte-info-do-contato
 {
     display: flex;
     flex-direction: column;
