@@ -570,6 +570,8 @@ form
 {
     display: flex;
     flex-direction: row;
+    background-color: #438823;
+    gap: 5rem;
 }
 .apoio-para-organizar-os-inputs
 {
@@ -627,16 +629,14 @@ form button:hover
     width: 25%;
     margin: 3rem;
 }
-.para-dar-o-traco
-{
-    border-left: 2px solid #fff;
-}
 .para-guardar-o-texto
 {
     justify-content: left;
     padding: 5rem;
     padding-left: 2.5rem;
-    padding-top: 2.5rem;
+    margin: 1rem;
+    background-color: antiquewhite;
+    border-left: 2px solid #fff;
 }
 .titulo-info
 {
