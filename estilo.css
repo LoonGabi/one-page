@@ -674,6 +674,12 @@ form button:hover
 /*Responsividade*/
 @media(max-width:1440px)
 {
+    .apresentacao
+    {
+        width: 100%;
+        padding: 7rem; 
+        padding-bottom: 2rem;   
+    }
     .oq-Buscamos
     {
         width: 100%;
@@ -830,6 +836,50 @@ form button:hover
         line-height: 2.4rem;
         padding-top: 8rem;
         font-size: 15px;
+    }
+}
+@media(min-width:800px)
+{
+    .apresentacao
+    {
+        width: 100%;
+        padding: 3rem; 
+        padding-bottom: 2rem;   
+    }
+    .organizador-para-buscamos-1
+    {
+        padding: 1rem;
+        padding-top: 0.5rem;
+    }
+    .titulo-sobre-b
+    {
+        margin-top: 1rem;
+    }
+    .conteudo-buscamos
+    {
+        margin-top: 0.5rem;
+    }
+    .organizador-para-projetos-1
+    {
+        padding: 1rem;
+        padding-top: 0.5rem;
+    }
+    .titulo-veja
+    {
+      font-size: 35px;
+    }
+    .titulo-projetos
+    {
+        margin-top: 1rem;
+    }
+    .conteudo-projetos
+    {
+        margin-top: 0.5rem;
+    }
+    .projetos button
+    {
+        padding: 0.2rem;
+        margin-top: 1.5rem;
     }
 }
 @media(max-width:768px)
