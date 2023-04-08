@@ -13,6 +13,7 @@
 body 
 {
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 
@@ -839,6 +840,95 @@ form button:hover
 }
 @media(max-width:1000px)
 {
+    
+    /* PARTE INTEGRANTES*/
+    .cards
+    {
+        gap: 2rem;
+        margin-top: 5%;
+        padding-bottom: 4rem;
+    }
+    .parte-externa
+    {
+        width: 250px;
+        height: 210px;
+        background-color: #ffffff;
+        border-radius: 3%;
+        transition: all 0.5s ease;
+    }
+    .primeira-fileira
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    .parte-interna-um
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .segunda-fileira
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    .parte-interna-dois
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .terceira-fileira
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    .parte-interna-tres
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .icone
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        padding-right: 3%;
+        padding-bottom: 2%;
+    }
+    .redes
+    {
+        width: 28px;
+        height: 27px;
+        margin-left: 1%;
+    }
+    .image-card-integrantes
+    {
+        width: 120px;
+        height: 120px;
+        align-items: center;
+    }
+    .nomes
+    {
+        font-family: "Dosis";
+        font-weight: Medium 500;
+        color: #151515;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .conteudo-sobre
+    {
+        margin: 2rem;
+        margin-bottom: 5rem;
+    }
+    .conteudo-buscamos
+    {
+        text-align: center;
+        margin: 2rem;
+    }
     .contato
     {
         flex-direction: column;
