@@ -760,7 +760,6 @@ form button:hover
     }
     .organizador-para-projetos-1
     {
-        align-items: center;
         width: 100%;
         padding: 5rem;
         padding-top: 2rem;
@@ -838,61 +837,14 @@ form button:hover
         font-size: 15px;
     }
 }
-@media(min-width:800px)
-{
-    .apresentacao
-    {
-        width: 100%;
-        padding: 3rem; 
-        padding-bottom: 2rem;   
-    }
-    .organizador-para-buscamos-1
-    {
-        padding: 1rem;
-        padding-top: 0.5rem;
-    }
-    .titulo-sobre-b
-    {
-        margin-top: 1rem;
-    }
-    .conteudo-buscamos
-    {
-        margin-top: 0.5rem;
-    }
-    .organizador-para-projetos-1
-    {
-        padding: 1rem;
-        padding-top: 0.5rem;
-    }
-    .titulo-veja
-    {
-      font-size: 35px;
-    }
-    .titulo-projetos
-    {
-        margin-top: 1rem;
-    }
-    .conteudo-projetos
-    {
-        margin-top: 0.5rem;
-    }
-    .projetos button
-    {
-        padding: 0.2rem;
-        margin-top: 1.5rem;
-    }
-}
-@media(max-width:768px)
+@media(max-width:1000px)
 {
     .contato
     {
-        display: flex;
-        background-color: #232b5a;
         flex-direction: column;
     }
     .organizador-para-parte-form-do-contato
     {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
@@ -906,7 +858,6 @@ form button:hover
     }
     form
     {
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 3rem;
@@ -915,13 +866,11 @@ form button:hover
     }
     .caixa-para-separar-os-iputs-do-textarea
     {
-        display: flex;
         flex-direction: row;
         gap: 5rem;
     }
     .apoio-para-organizar-os-inputs
     {
-        display: flex;
         flex-direction: column;
         line-height: 5rem;
     }
@@ -981,4 +930,8 @@ form button:hover
         line-height: 2.5rem;
         padding-top: 3rem;
     }
+}
+@media(max-width:425px)
+{
+
 }
