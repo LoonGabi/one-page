@@ -44,14 +44,14 @@ ul
     display: flex;
     gap: 3rem;
     list-style-type: none;
+}
+.item-menu 
+{
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     color: #1b1a1b;
     font-weight: 600;
     font-size: 1.2rem;
-}
-.item-menu a
-{
-    text-decoration: none;
 }
 
 
@@ -84,9 +84,12 @@ ul
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+    height: 100vh;
     padding: 7.5rem; 
     padding-bottom: 3rem;   
+    /* background-color: #9ae6e0; */
 }
 .espacinho-para-titulos-apresentacao
 {
@@ -129,7 +132,6 @@ ul
     background-color: #7322a6;
     border-radius: 0.5rem;
     padding: 0.2rem;
-    margin-top: 10%;
     height: 3rem;
     width: 11rem;
     transition: all 0.5s ease;  
@@ -287,6 +289,9 @@ ul
     width: 100%;
     height: 80rem;
     background-image: url(img/fundo-sessao-4.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .espacinho-para-titulos-integrantes
 {
@@ -316,11 +321,11 @@ ul
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: right;
     gap: 3rem;
     margin-top: 5rem;
-    max-width: 70%;
+    max-width: 65%;
     margin-bottom: 4rem;
 }
 .parte-externa
@@ -643,7 +648,6 @@ form button:hover
     align-self: flex-start;
     line-height: 2.8rem;
     padding-top: 8rem;
-    
 }
 
 
@@ -655,52 +659,31 @@ form button:hover
 
 
 /*Responsividade*/
-@media(max-width:1440px)
+@media(max-width:1500px)
 {
     .apresentacao
     {
         width: 100%;
-        padding: 7rem; 
-        padding-bottom: 2rem;   
+        padding: 10rem;
     }
-    .oq-Buscamos
+    .apresentacao button
     {
-        width: 100%;
+        width: 15rem;
+        margin: 1.5rem;
     }
-    .organizador-para-buscamos-1
-    {
-        width: 35%;
-        padding: 2rem;
-    }
-    .organizador-para-buscamos-2
-    {
-        width: 65%;
-    }
-    .organizador-para-projetos-1
-    {
-        width: 35%;
-        padding: 2rem;
-        padding-top: 2rem;
-    }
-    .organizador-para-projetos-2
-    {
-        width: 65%;
-    }
-}
-@media(max-width:1024px)
-{
     .bloco-organizador-da-parte-apresentacao
     {
         display: flex;
         background-image:none;
+        height: auto;
     }
     .caixa-organizadora-para-separar-apresentacao-1
     {
         width: 100%;
     }
-    .apresentacao button
+    .titulo-saiba
     {
-        width: 15rem;
+        text-align: center;
     }
     .oq-Buscamos
     {
@@ -708,7 +691,12 @@ form button:hover
     }
     .organizador-para-buscamos-1
     {
+        padding: 2rem;
         width: 100%;
+    }
+    .organizador-para-buscamos-2
+    {
+        display: none;
     }
     .titulo-sobre-b
     {
@@ -717,29 +705,16 @@ form button:hover
     .titulo-buscamos
     {
         align-self: center;
+        text-align: center;
     }
     .conteudo-buscamos
     {
         text-align: center;
         margin: 4rem;
     }
-    .organizador-para-buscamos-2
-    {
-        display: none;
-    }
     .img-buscamos
     {
         display: none;
-    }
-    .cards
-    {
-        gap: 2rem;
-        margin-top: 4rem;
-        padding-bottom: 4rem;
-    }
-    .primeira-fileira, .segunda-fileira, .terceira-fileira
-    {
-        gap: 1.5rem;
     }
     .organizador-para-projetos-1
     {
@@ -754,6 +729,79 @@ form button:hover
     .projetos button
     {
         width: 15rem;
+    }
+    .cards
+    {
+        max-width: 80%;
+        gap: 2rem;
+    }
+}
+@media(max-width:1215px)
+{
+    .cards
+    {
+        max-width: 90%;
+    }
+    .parte-externa
+    {
+        width: 250px;
+        height: 210px;
+        background-color: #ffffff;
+        border-radius: 3%;
+        transition: all 0.5s ease;
+    }
+    .primeira-fileira
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    .parte-interna-um
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .parte-interna-dois
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .parte-interna-tres
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .icone
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        padding-right: 3%;
+        padding-bottom: 2%;
+    }
+    .redes
+    {
+        width: 28px;
+        height: 27px;
+        margin-left: 1%;
+    }
+    .image-card-integrantes
+    {
+        width: 120px;
+        height: 120px;
+        align-items: center;
+    }
+    .nomes
+    {
+        font-family: "Dosis";
+        font-weight: Medium 500;
+        color: #151515;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     .organizador-para-parte-form-do-contato
     {
@@ -817,74 +865,11 @@ form button:hover
     {
         line-height: 2.4rem;
         padding-top: 8rem;
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 @media(max-width:1000px)
-{
-    
-    /* PARTE INTEGRANTES*/
-    .cards
-    {
-        gap: 2rem;
-        margin-top: 5%;
-        padding-bottom: 4rem;
-    }
-    .parte-externa
-    {
-        width: 250px;
-        height: 210px;
-        background-color: #ffffff;
-        border-radius: 3%;
-        transition: all 0.5s ease;
-    }
-    .primeira-fileira
-    {
-        display: flex;
-        gap: 2rem;
-    }
-    .parte-interna-um
-    {
-        padding-top: 5px;
-        width: 100%;
-        height: 130px;
-    }
-    .parte-interna-tres
-    {
-        padding-top: 5px;
-        width: 100%;
-        height: 130px;
-    }
-    .icone
-    {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: right;
-        align-items: center;
-        padding-right: 3%;
-        padding-bottom: 2%;
-    }
-    .redes
-    {
-        width: 28px;
-        height: 27px;
-        margin-left: 1%;
-    }
-    .image-card-integrantes
-    {
-        width: 120px;
-        height: 120px;
-        align-items: center;
-    }
-    .nomes
-    {
-        font-family: "Dosis";
-        font-weight: Medium 500;
-        color: #151515;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
+{    
     .conteudo-sobre
     {
         margin: 2rem;
@@ -903,8 +888,6 @@ form button:hover
     {
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
-        margin-left: 5rem;
     }
     .titulos-do-contato
     {
@@ -959,36 +942,26 @@ form button:hover
     .organizador-para-parte-info-do-contato
     {
         display: flex;
-        width: 100%;
+        flex-direction: column;
         background-color: #3ec9c0;
         justify-content: center;
+        align-items: center;
     }
     .para-guardar-o-texto
     {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
-        padding-top: 2.5rem;
         border: none;
         border-top: 2px solid #fff;
-        background-color: red;
     }
     .titulo-info
     {
         margin-bottom: 2rem;
-        align-self: center;
     }
     .escritos-para-contato
     {
         text-align: center;
         font-size: 25px;
-        line-height: 2.8rem;
-        margin-top: 6rem;
-        padding-top: 0rem;
-        align-self: center;
     }
 }
 @media(max-width:425px)
