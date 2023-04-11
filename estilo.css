@@ -870,15 +870,20 @@ form button:hover
 }
 @media(max-width:1000px)
 {    
+    .conteudo-apresentacao
+    {
+        margin: 0.5rem;
+        padding: 0;
+    }
     .conteudo-sobre
     {
-        margin: 2rem;
+        margin: 0.5rem;
         margin-bottom: 5rem;
     }
     .conteudo-buscamos
     {
         text-align: center;
-        margin: 2rem;
+        margin: 0.5rem;
     }
     .contato
     {
