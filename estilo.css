@@ -512,20 +512,20 @@ ul
 {
     display: flex;
     background-color: #232b5a;
+    width: 100vw;
 }
 .organizador-para-parte-form-do-contato
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-left: 5rem;
+    width: 60vw;
 }
 .titulos-do-contato
 {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
+    margin-left: 5rem;
 }
 .titulo-contato
 {
@@ -548,11 +548,12 @@ ul
 form
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3rem;
-    width: 80%;
-    gap: 1.5rem;
+    margin-left: 5rem;
+    max-width: 85%;
+    gap: 1.3rem;
+    background-color: #3ec9c0;
 }
 .caixa-para-separar-os-iputs-do-textarea
 {
@@ -575,14 +576,18 @@ form input
 {
     background-color: #232b5a;
     border-bottom: 1px solid #fff;
-    width: 14rem;
+    width: 15vw;
     color: #fff;
+    outline: none;
 }
 form textarea
 {
     background-color: #232b5a;
     border: 1px solid #fff;
     color: #fff;
+    height: 10rem;
+    width: 100%;
+    outline: none;
 }
 .apoio-para-organizar-o-button
 {
@@ -591,6 +596,7 @@ form textarea
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 2.6rem;
 }
 form button
 {
@@ -618,20 +624,20 @@ form button:hover
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin: 3rem;
+    width: 40vw;
+    
 }
 .para-guardar-o-texto
 {
-    padding: 5rem;
-    padding-top: 2.5rem;
-    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 5rem 5rem 2.5rem;
     margin: 1rem;
     border-left: 2px solid #fff;
+    background-color: #3ec9c0;
 }
 .titulo-info
 {
-    display: flex;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-weight: 400;
@@ -640,7 +646,6 @@ form button:hover
 }
 .escritos-para-contato
 {
-    display: flex;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     font-weight: 400;
@@ -803,70 +808,6 @@ form button:hover
         padding-top: 3%;
         padding-bottom: 3%;
     }
-    .organizador-para-parte-form-do-contato
-    {
-        width: 50%;
-        margin-left: 3rem;
-    }
-    .titulos-do-contato
-    {
-        margin-top: 3rem;
-    }
-    form
-    {
-        margin-top: 2rem;
-        width: 60%;
-        gap: 1rem;
-    }
-    .caixa-para-separar-os-iputs-do-textarea
-    {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-    }
-    .apoio-para-organizar-os-inputs
-    {
-        display: flex;
-        flex-direction: column;
-        line-height: 5rem;
-    }
-    form input
-    {
-        width: 8rem;
-    }
-    form textarea
-    {
-        width: 34rem;
-    }
-    .apoio-para-organizar-o-button
-    {
-        justify-content: right;
-        width: 100%;
-    }
-    form button
-    {
-        margin-top: 2rem;
-        height: 3rem;
-        width: 10rem;
-    }
-    .organizador-para-parte-info-do-contato
-    {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        margin-left:4rem;
-    }
-    .para-guardar-o-texto
-    {
-        justify-content: left;
-        margin: 0.5rem;
-    }
-    .escritos-para-contato
-    {
-        line-height: 2.4rem;
-        padding-top: 8rem;
-        font-size: 16px;
-    }
 }
 @media(max-width:1000px)
 {    
@@ -889,11 +830,7 @@ form button:hover
     {
         flex-direction: column;
     }
-    .organizador-para-parte-form-do-contato
-    {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+
     .titulos-do-contato
     {
         display: flex;
@@ -944,14 +881,7 @@ form button:hover
         height: 3rem;
         width: 12rem;
     }
-    .organizador-para-parte-info-do-contato
-    {
-        display: flex;
-        flex-direction: column;
-        background-color: #3ec9c0;
-        justify-content: center;
-        align-items: center;
-    }
+   
     .para-guardar-o-texto
     {
         width: 100%;
@@ -969,7 +899,48 @@ form button:hover
         font-size: 25px;
     }
 }
-@media(max-width:425px)
-{
 
+
+
+
+
+
+
+/* RODAPÉ */
+@media(max-width: 1518px)
+{
+    .contato
+    {
+        flex-direction: column;
+    }
+    .organizador-para-parte-form-do-contato
+    {
+        width: 100vw;
+    }
+    .organizador-para-parte-form-do-contato form
+    {
+        justify-content: center;
+    }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 45vw;
+    }
+
+
+
+    .organizador-para-parte-info-do-contato
+    {
+       
+        width: 100vw;
+    }
+    .para-guardar-o-texto
+    {
+        border-left: none;
+        align-items: center;
+        margin-left: 5rem;
+    }
+    .escritos-para-contato
+    {
+        padding-top: 5rem;
+    }
 }
