@@ -88,7 +88,6 @@ ul
     height: 100vh;
     padding: 7.5rem; 
     padding-bottom: 3rem;   
-    /* background-color: #9ae6e0; */
 }
 .espacinho-para-titulos-apresentacao
 {
@@ -664,6 +663,56 @@ form button:hover
 
 
 /*Responsividade*/
+/* RODAPÉ */
+@media(max-width: 1518px)
+{
+    .contato
+    {
+        flex-direction: column;
+    }
+    .organizador-para-parte-form-do-contato
+    {
+        width: 100vw;
+    }
+    .organizador-para-parte-form-do-contato form
+    {
+        justify-content: center;
+    }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 45vw;
+    }
+    .organizador-para-parte-info-do-contato
+    {
+        width: 100vw;
+        height: auto;
+    }
+    .para-guardar-o-texto
+    {
+        border-left: none;
+        align-items: center;
+        justify-content: center;
+        width: 89vw;
+        margin-left: 5rem;
+        padding-left: 0;
+        border-top: 2px solid #fff ;
+    }
+    .titulo-info
+    {
+        align-self: left;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .escritos-para-contato
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        padding-top: 0;
+        width: 100%;
+        gap: 2rem;
+    }
+}
 @media(max-width:1500px)
 {
     .apresentacao
@@ -741,6 +790,23 @@ form button:hover
         gap: 2rem;
     }
 }
+/*Rodapé*/
+@media(max-width: 1339px)
+{
+    .escritos-para-contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+        padding-left: 1rem;
+        align-self: center;
+        flex-wrap: wrap;
+        height: 8rem;
+        width: 40rem;
+        gap: 1rem;
+    }
+}
 @media(max-width:1215px)
 {
     .cards
@@ -805,14 +871,7 @@ form button:hover
     }
 }
 @media(max-width:1000px)
-{    
-    .apresentacao{background-color: #1d4ba0;}
-    .conteudo-apresentacao
-    {
-        padding: 0;
-        margin: 0;
-        background-color: #97b4e9;
-    }
+{  
     .conteudo-sobre
     {
         margin: 0.5rem;
@@ -823,8 +882,7 @@ form button:hover
         text-align: center;
         margin: 0.5rem;
     }
-
-
+   
     /*Rodapé*/
     .contato
     {
@@ -881,26 +939,29 @@ form button:hover
         height: 3rem;
         width: 12rem;
     }
-   
+    .organizador-para-parte-info-do-contato
+    {
+        border-top: 2px solid #fff ;
+    }
     .para-guardar-o-texto
     {
         width: 100%;
         display: flex;
+        border-top: 0;
         border: none;
-        border-top: 2px solid #fff;
     }
     .titulo-info
     {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .escritos-para-contato
     {
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: 0;
     }
-}
-
-/*Para ajustar os cards da parte integrantes*/
+}  
+/* Media para ajustar os cards da parte integrantes*/
 @media(max-width: 904px) 
 {
     .cards
@@ -965,99 +1026,17 @@ form button:hover
         font-size: 12px;
     }
 }
-
-
-
-
-
-
-
-
-/* RODAPÉ */
-@media(max-width: 1518px)
-{
-    .contato
-    {
-        flex-direction: column;
-    }
-    .organizador-para-parte-form-do-contato
-    {
-        width: 100vw;
-    }
-    .organizador-para-parte-form-do-contato form
-    {
-        justify-content: center;
-    }
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 45vw;
-    }
-    .organizador-para-parte-info-do-contato
-    {
-        width: 100vw;
-        height: auto;
-    }
-    .para-guardar-o-texto
-    {
-        border-left: none;
-        align-items: center;
-        justify-content: center;
-        width: 89vw;
-        margin-left: 5rem;
-        padding-left: 0;
-        border-top: 2px solid #fff ;
-    }
-    .titulo-info
-    {
-        align-self: left;
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .escritos-para-contato
-    {
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-        padding-top: 0;
-        width: 100%;
-        gap: 2rem;
-    }
-}
-/*Rodapé*/
-@media(max-width: 1339px)
-{
-    .escritos-para-contato
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:baseline;
-        padding-left: 1rem;
-        align-self: center;
-        flex-wrap: wrap;
-        height: 8rem;
-        width: 40rem;
-        gap: 1rem;
-    }
-}
-@media(max-width: 1000px)
-{
-    .organizador-para-parte-info-do-contato
-    {
-        border-top: 2px solid #fff ;
-    }
-    .para-guardar-o-texto
-    {
-        border: 0;
-    }
-    .escritos-para-contato
-    {
-        font-size: 20px;
-        margin-top: 0;
-    }
-}
 @media (max-width: 680px)
 {
+      
+    .apresentacao
+    {
+        padding: 5rem;
+    }
+    ul
+    {
+        gap: 1.5rem
+    }
     .escritos-para-contato
     {
         display: flex;
