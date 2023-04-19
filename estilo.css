@@ -486,6 +486,7 @@ ul
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
+    text-transform: uppercase;
     border-radius: 0.5rem;
     padding: 0.2rem;
     margin-top: 3rem;
@@ -553,7 +554,6 @@ form
     margin-left: 5rem;
     max-width: 85%;
     gap: 1.3rem;
-    background-color: #3ec9c0;
 }
 .caixa-para-separar-os-iputs-do-textarea
 {
@@ -625,16 +625,17 @@ form button:hover
     display: flex;
     flex-direction: column;
     width: 40vw;
-    
+    height: 50vh;
+    margin-top: 2.5rem;
 }
 .para-guardar-o-texto
 {
     display: flex;
     flex-direction: column;
     padding: 2.5rem 5rem 5rem 2.5rem;
-    margin: 1rem;
-    border-left: 2px solid #fff;
-    background-color: #3ec9c0;
+    margin: 1.2rem;
+    height: 100%;
+    border-left: 2px solid #ffffff;
 }
 .titulo-info
 {
@@ -826,6 +827,9 @@ form button:hover
         text-align: center;
         margin: 0.5rem;
     }
+
+
+    /*Rodapé*/
     .contato
     {
         flex-direction: column;
@@ -906,6 +910,7 @@ form button:hover
 
 
 
+
 /* RODAPÉ */
 @media(max-width: 1518px)
 {
@@ -930,17 +935,49 @@ form button:hover
 
     .organizador-para-parte-info-do-contato
     {
-       
         width: 100vw;
+        height: auto;
     }
     .para-guardar-o-texto
     {
         border-left: none;
         align-items: center;
+        justify-content: center;
+        width: 89vw;
         margin-left: 5rem;
+        padding-left: 0;
+        border-top: 2px solid #fff ;
+    }
+    .titulo-info
+    {
+        align-self: left;
+        width: 100%;
+        margin-top: 1rem;
     }
     .escritos-para-contato
     {
-        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        padding-top: 0;
+        width: 100%;
+        gap: 2rem;
+    }
+}
+/*Rodapé*/
+@media(max-width: 1339px)
+{
+    .escritos-para-contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+        padding-left: 1rem;
+        align-self: center;
+        flex-wrap: wrap;
+        height: 8rem;
+        width: 40rem;
+        gap: 1rem;
     }
 }
