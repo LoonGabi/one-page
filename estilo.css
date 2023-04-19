@@ -981,3 +981,33 @@ form button:hover
         gap: 1rem;
     }
 }
+@media(max-width: 1000px)
+{
+    .organizador-para-parte-info-do-contato
+    {
+        border-top: 2px solid #fff ;
+    }
+    .para-guardar-o-texto
+    {
+        border: 0;
+    }
+    .escritos-para-contato
+    {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 680px)
+{
+    .escritos-para-contato
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        align-self: center;
+        height: 13rem;
+        line-height: 2rem;
+    }
+}
