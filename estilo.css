@@ -713,6 +713,12 @@ form button:hover
         gap: 2rem;
     }
 }
+
+
+
+
+
+
 @media(max-width:1500px)
 {
     .apresentacao
@@ -790,6 +796,14 @@ form button:hover
         gap: 2rem;
     }
 }
+
+
+
+
+
+
+
+
 /*Rodapé*/
 @media(max-width: 1339px)
 {
@@ -807,6 +821,13 @@ form button:hover
         gap: 1rem;
     }
 }
+
+
+
+
+
+
+
 @media(max-width:1215px)
 {
     .cards
@@ -870,10 +891,19 @@ form button:hover
         padding-bottom: 3%;
     }
 }
+
+
+
+
+
+
+
+
 @media(max-width:1000px)
 {  
     .conteudo-sobre
     {
+        padding: 0.8rem;
         margin: 0.5rem;
         margin-bottom: 5rem;
     }
@@ -888,7 +918,6 @@ form button:hover
     {
         flex-direction: column;
     }
-
     .titulos-do-contato
     {
         display: flex;
@@ -907,7 +936,7 @@ form button:hover
     .caixa-para-separar-os-iputs-do-textarea
     {
         flex-direction: row;
-        gap: 5rem;
+        gap: 4rem;
     }
     .apoio-para-organizar-os-inputs
     {
@@ -945,7 +974,6 @@ form button:hover
     }
     .para-guardar-o-texto
     {
-        width: 100%;
         display: flex;
         border-top: 0;
         border: none;
@@ -961,6 +989,13 @@ form button:hover
         margin-top: 0;
     }
 }  
+
+
+
+
+
+
+
 /* Media para ajustar os cards da parte integrantes*/
 @media(max-width: 904px) 
 {
@@ -1026,6 +1061,33 @@ form button:hover
         font-size: 12px;
     }
 }
+
+
+
+
+
+
+
+
+@media(max-width: 760px)
+{
+    .box-img-header
+    {
+        margin-right: 1.8rem;
+    }
+    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale
+    {
+        font-size: 43px;
+    }
+}
+
+
+
+
+
+
+
+
 @media (max-width: 680px)
 {
       
