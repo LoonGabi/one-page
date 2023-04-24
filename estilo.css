@@ -1147,4 +1147,31 @@ form button:hover
         height: 13rem;
         line-height: 2rem;
     }
+    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale
+    {
+        font-size: 35px;
+        text-align: center;
+    }
+    .titulo-info
+    {
+        font-size: 35px;
+    }
+    .conteudo-buscamos, .conteudo-sobre, .conteudo-projetos
+    {
+        text-align: justify;
+    }
+
+
+
+
+
+    /*Rodapé*/
+    form
+    {
+        margin-left: 3rem;
+    }
+    form input
+    {
+        width: 15rem;
+    }
 }
