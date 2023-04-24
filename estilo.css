@@ -1115,8 +1115,6 @@ form button:hover
         padding: 4rem;
         height: 80vh;
     }
-    .imagens-icones
-    {}
     .titulo-conhecaNossa, .titulo-Empresa
     {
         font-size: 40px;
@@ -1226,4 +1224,25 @@ form button:hover
         padding-left: 2rem;
     }
    
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 577px)
+{
+    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
+    {
+        font-size: 14px;
+    }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 68vw;
+    }
 }
