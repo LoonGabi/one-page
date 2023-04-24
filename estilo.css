@@ -725,7 +725,6 @@ form button:hover
     {
         width: 100%;
         padding: 5rem;
-        /* height: 80vh; */
     }
     .apresentacao button
     {
@@ -1124,8 +1123,9 @@ form button:hover
     }
     .apresentacao button
     {
-        height: 2.5rem;
-        width: 12rem;
+        height: 2.4rem;
+        width: 11rem;
+        font-size: 20px;
     }
     .imagens-icones
     {
@@ -1147,18 +1147,48 @@ form button:hover
         height: 13rem;
         line-height: 2rem;
     }
+    .titulo-buscamos
+    {
+        margin-bottom: 0.3rem;
+    }
     .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale
     {
-        font-size: 35px;
+        font-size: 33px;
         text-align: center;
     }
     .titulo-info
     {
         font-size: 35px;
     }
-    .conteudo-buscamos, .conteudo-sobre, .conteudo-projetos
+    .conteudo-buscamos
     {
-        text-align: justify;
+        text-align: justify; 
+        padding: 0;
+        margin: 0.7rem;
+        margin-top: 1rem; 
+    }
+    .conteudo-sobre
+    {
+        text-align: justify; 
+        padding: 0; 
+        margin: 2rem;
+    }
+    .organizador-para-projetos-1
+    {
+        padding: 1rem;
+    }
+    .conteudo-projetos
+    {
+        text-align: justify;  
+        padding: 0;
+        margin: 1rem;
+    }
+    .projetos button
+    {
+        height: 2.4rem;
+        width: 11rem;
+        font-size: 20px;
+        margin-top: 1.5rem;
     }
 
 
@@ -1172,6 +1202,19 @@ form button:hover
     }
     form input
     {
-        width: 15rem;
+        width: 23rem;
     }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 73vw;
+    }
+    .para-guardar-o-texto
+    {
+        margin-left: 3rem;
+    }
+    .escritos-para-contato
+    {
+    font-size: 18px;
+    }
+   
 }
