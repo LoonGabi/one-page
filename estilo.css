@@ -459,7 +459,7 @@ ul
 {
     text-align: center;
     margin-top: 2rem;
-    font-family: 'Dosis', sans-serif;
+    font-family: poppins, sans-serif;
     color: #000;
     font-size: 20px;
     line-height: 2em;
@@ -588,6 +588,7 @@ form textarea
     height: 10rem;
     width: 100%;
     outline: none;
+    resize: none;
 }
 .apoio-para-organizar-o-button
 {
@@ -625,14 +626,14 @@ form button:hover
     display: flex;
     flex-direction: column;
     width: 40vw;
-    height: 50vh;
-    margin-top: 2.5rem;
+    height: 60vh;
+    margin-top: 2.7rem;
 }
 .para-guardar-o-texto
 {
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 5rem 5rem 2.5rem;
+    padding: 1rem 0.1rem 5rem 2.5rem;
     margin: 1.2rem;
     height: 100%;
     border-left: 2px solid #ffffff;
@@ -665,6 +666,77 @@ form button:hover
 
 
 /*Responsividade*/
+
+/*Cards*/
+@media (max-width: 1552px)
+{
+    .cards
+    {
+        max-width: 70%;
+    }
+    .parte-externa
+    {
+        width: 250px;
+        height: 210px;
+        background-color: #ffffff;
+        border-radius: 3%;
+        transition: all 0.5s ease;
+    }
+    .parte-interna-um
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .parte-interna-dois
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .parte-interna-tres
+    {
+        padding-top: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .icone
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        padding-right: 3%;
+        padding-bottom: 2%;
+    }
+    .redes
+    {
+        width: 28px;
+        height: 27px;
+        margin-left: 1%;
+    }
+    .image-card-integrantes
+    {
+        width: 120px;
+        height: 120px;
+        align-items: center;
+    }
+    .nomes
+    {
+        font-family: "Dosis";
+        font-weight: Medium 500;
+        color: #151515;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+
+
+
+
+
 /* RODAPÉ */
 @media(max-width: 1518px)
 {
@@ -774,6 +846,7 @@ form button:hover
     {
         text-align: center;
         margin: 4rem;
+        margin-bottom: 6rem;
     }
     .img-buscamos
     {
@@ -795,7 +868,6 @@ form button:hover
     }
     .cards
     {
-        max-width: 80%;
         gap: 2rem;
     }
 }
@@ -831,74 +903,13 @@ form button:hover
 
 
 
-
-@media(max-width:1215px)
+@media (max-width: 1182px)
 {
     .cards
     {
-        max-width: 90%;
-    }
-    .parte-externa
-    {
-        width: 250px;
-        height: 210px;
-        background-color: #ffffff;
-        border-radius: 3%;
-        transition: all 0.5s ease;
-    }
-    .parte-interna-um
-    {
-        padding-top: 5px;
-        width: 100%;
-        height: 130px;
-    }
-    .parte-interna-dois
-    {
-        padding-top: 5px;
-        width: 100%;
-        height: 130px;
-    }
-    .parte-interna-tres
-    {
-        padding-top: 5px;
-        width: 100%;
-        height: 130px;
-    }
-    .icone
-    {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: right;
-        align-items: center;
-        padding-right: 3%;
-        padding-bottom: 2%;
-    }
-    .redes
-    {
-        width: 28px;
-        height: 27px;
-        margin-left: 1%;
-    }
-    .image-card-integrantes
-    {
-        width: 120px;
-        height: 120px;
-        align-items: center;
-    }
-    .nomes
-    {
-        font-family: "Dosis";
-        font-weight: Medium 500;
-        color: #151515;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        max-width: 85%;
     }
 }
-
-
-
-
 
 
 
@@ -919,6 +930,7 @@ form button:hover
     {
         text-align: center;
         margin: 1rem;
+        margin-bottom: 3rem;
     }
    
     /*Rodapé*/
@@ -1004,12 +1016,13 @@ form button:hover
 
 
 
+
 /* Media para ajustar os cards da parte integrantes*/
-@media(max-width: 904px) 
+@media(max-width: 970px) 
 {
     .cards
     {
-        max-width: 100%;
+        max-width: 90%;
     }
     .parte-externa
     {
@@ -1079,8 +1092,6 @@ form button:hover
 
 
 
-
-
 @media(max-width: 760px)
 {
     .box-img-header
@@ -1088,7 +1099,6 @@ form button:hover
         margin-right: 1.8rem;
     }
 }
-
 
 
 
@@ -1195,9 +1205,6 @@ form button:hover
     }
 
 
-
-
-
     /*Rodapé*/
     form
     {
@@ -1225,8 +1232,6 @@ form button:hover
     }
    
 }
-
-
 
 
 
