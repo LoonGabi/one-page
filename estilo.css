@@ -202,7 +202,7 @@ ul
     display: flex;
     justify-content:center;
     text-align: center;
-    margin: 6rem 10rem 8rem 10rem;
+    margin: 5rem 5rem 8rem 5rem;
     font-family: poppins, sans-serif;
     color: #fff;
     font-size: 20px;
@@ -458,7 +458,7 @@ ul
 .conteudo-projetos
 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-family: poppins, sans-serif;
     color: #000;
     font-size: 20px;
@@ -918,18 +918,27 @@ form button:hover
 {  
     .conteudo-sobre
     {
-        padding: 0.8rem;
-        margin: 0.5rem;
+        padding: 0rem;
+        margin: 2rem;
         margin-bottom: 5rem;
     }
     .titulo-sobre-b
     {
         margin-top: 1rem;
     }
+    .titulo-veja,.conteudo-projetos
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .titulo-buscamos, .titulo-veja
+    {
+        margin-bottom: 2rem;
+    }
     .conteudo-buscamos
     {
         text-align: center;
-        margin: 1rem;
+        margin: 0rem;
         margin-bottom: 3rem;
     }
    
