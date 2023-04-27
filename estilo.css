@@ -855,7 +855,7 @@ form button:hover
     .organizador-para-projetos-1
     {
         width: 100%;
-        padding: 5rem;
+        padding: 3rem;
         padding-top: 2rem;
     }
     .organizador-para-projetos-2
@@ -979,6 +979,7 @@ form button:hover
     form textarea
     {
         border: 1px solid #fff;
+        width: 100%;
     }
     .apoio-para-organizar-o-button
     {
@@ -1225,7 +1226,7 @@ form button:hover
     }
     .organizador-para-parte-form-do-contato form textarea
     {
-        width: 73vw;
+        width: 72vw;
     }
     .para-guardar-o-texto
     {
