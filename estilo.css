@@ -758,7 +758,7 @@ form button:hover
     }
     .organizador-para-parte-form-do-contato form textarea
     {
-        width: 45vw;
+        width: 49vw;
     }
     .organizador-para-parte-info-do-contato
     {
@@ -983,7 +983,10 @@ form button:hover
     form textarea
     {
         border: 1px solid #fff;
-        width: 100%;
+    }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 53vw;
     }
     .apoio-para-organizar-o-button
     {
@@ -1095,6 +1098,10 @@ form button:hover
         padding-bottom: 3%;
         font-size: 12px;
     }
+
+
+
+
     .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale, .titulo-info
     {
         font-size: 42px;
@@ -1110,7 +1117,7 @@ form button:hover
 {
     .box-img-header
     {
-        margin-right: 1.8rem;
+        margin-right: 1.9rem;
     }
 }
 
@@ -1230,7 +1237,7 @@ form button:hover
     }
     .organizador-para-parte-form-do-contato form textarea
     {
-        width: 72vw;
+        width: 23remc;
     }
     .para-guardar-o-texto
     {
