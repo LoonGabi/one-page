@@ -12,6 +12,10 @@
     text-decoration: none;
     border: none;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body 
 {
     background-color: #ffffff;
@@ -1240,6 +1244,10 @@ form button:hover
     {
         padding-left: 2rem;
     }
+    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
+    {
+        text-align: justify;
+    }
    
 }
 
@@ -1255,6 +1263,7 @@ form button:hover
     .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
     {
         font-size: 14px;
+        text-align: justify;
     }
     .organizador-para-parte-form-do-contato form textarea
     {
