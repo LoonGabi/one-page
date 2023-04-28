@@ -1229,7 +1229,7 @@ form button:hover
     /*Rodapé*/
     form
     {
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
     form input
     {
@@ -1282,6 +1282,10 @@ form button:hover
     .titulo-saiba
     {
         padding: 0.5rem;
+    }
+    .titulo-sobre
+    {
+        margin-top: 2.5rem;
     }
 }
 
@@ -1421,16 +1425,17 @@ form button:hover
         font-size: 13px;
     }
 
-
-    form input
+    .cards
     {
-        width: 15rem;
+        margin-top: 2.5rem;
     }
-    .organizador-para-parte-form-do-contato form textarea
+
+    form input, .organizador-para-parte-form-do-contato form textarea
     {
         width: 15rem;
     }
 }
+
 
 
 @media(max-width: 345px)
@@ -1447,5 +1452,17 @@ form button:hover
 
 
 
+
+@media(max-width: 300px)
+{
+    form input, .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 12rem;
+    }
+    .escritos-para-contato p 
+    {
+        font-size: 16px;
+    }
+}
 
 
