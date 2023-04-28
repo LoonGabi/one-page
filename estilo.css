@@ -42,7 +42,7 @@ body
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 ul
 {
@@ -670,7 +670,6 @@ form button:hover
 
 
 /*Responsividade*/
-
 /*Cards*/
 @media (max-width: 1552px)
 {
@@ -802,12 +801,16 @@ form button:hover
     .apresentacao
     {
         width: 100%;
-        padding: 5rem;
+        padding: 4rem;
     }
     .apresentacao button
     {
         width: 15rem;
-        margin: 1.9rem;
+        margin: 1.6rem;
+    }
+    .imagens-icones
+    {
+        margin-top:3rem;
     }
     .bloco-organizador-da-parte-apresentacao
     {
@@ -875,7 +878,6 @@ form button:hover
         gap: 2rem;
     }
 }
-
 
 
 
@@ -1097,7 +1099,6 @@ form button:hover
     }
 
 
-
     .organizador-para-parte-form-do-contato form textarea
     {
         width: 32.5rem;
@@ -1108,7 +1109,6 @@ form button:hover
     }
 
 }
-
 
 
 
@@ -1147,6 +1147,11 @@ form button:hover
         padding: 4rem;
         height: 80vh;
     }
+    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
+    {
+        font-size: 14px;
+        text-align: justify;
+    }
     .titulo-conhecaNossa, .titulo-Empresa
     {
         font-size: 40px;
@@ -1167,8 +1172,8 @@ form button:hover
     }
     .imagens-icones img
     {
-        width: 2.8rem;
-        height: 2.8rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
     .escritos-para-contato
     {
@@ -1266,11 +1271,6 @@ form button:hover
 
 @media (max-width: 577px)
 {
-    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
-    {
-        font-size: 14px;
-        text-align: justify;
-    }
     .organizador-para-parte-form-do-contato form textarea
     {
         width: 68vw;
@@ -1286,6 +1286,11 @@ form button:hover
     .titulo-sobre
     {
         margin-top: 2.5rem;
+    }
+    .imagens-icones img
+    {
+        width: 2.8rem;
+        height: 2.8rem;
     }
 }
 
