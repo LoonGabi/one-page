@@ -891,12 +891,11 @@ form button:hover
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:baseline;
-        padding-left: 1rem;
+        text-align: center;
         align-self: center;
         flex-wrap: wrap;
         height: 8rem;
-        width: 40rem;
+        width: 100%;
         gap: 1rem;
     }
 }
@@ -1045,9 +1044,7 @@ form button:hover
     {
         width: 200px;
         height: 170px;
-        background-color: #ffffff;
         border-radius: 3%;
-        transition: all 0.5s ease;
     }
     .parte-interna-um
     {
@@ -1101,11 +1098,15 @@ form button:hover
 
 
 
-
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 32.5rem;
+    }
     .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale, .titulo-info
     {
         font-size: 42px;
     }
+
 }
 
 
@@ -1175,7 +1176,6 @@ form button:hover
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 2rem;
         align-self: center;
         height: 13rem;
         line-height: 2rem;
@@ -1237,7 +1237,7 @@ form button:hover
     }
     .organizador-para-parte-form-do-contato form textarea
     {
-        width: 23remc;
+        width: 23rem;
     }
     .para-guardar-o-texto
     {
@@ -1264,7 +1264,6 @@ form button:hover
 
 
 
-
 @media (max-width: 577px)
 {
     .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
@@ -1276,4 +1275,177 @@ form button:hover
     {
         width: 68vw;
     }
+    .apresentacao
+    {
+        padding: 2.5rem;
+    }
+    .titulo-saiba
+    {
+        padding: 0.5rem;
+    }
 }
+
+
+
+
+
+@media (max-width: 480px){
+    /*Cards*/
+    .cards
+    {
+        max-width: 100%;
+        gap: 1rem;
+    }
+}
+
+
+
+
+
+@media(max-width: 450px)
+{
+    .box-img-header
+    {
+        width: 7rem;
+        height: 3rem;
+    }
+    ul
+    {
+        gap: 1rem;
+    }
+    .item-menu
+    {
+        font-size: 13px;
+    }
+
+
+    /*Form*/
+    .titulos-do-contato
+    {
+        margin-left: 2rem;
+    }
+    .titulo-info
+    {
+        padding-left: 0;
+    }
+    form input
+    {
+        width: 19rem;
+    }
+    .para-guardar-o-texto
+    {
+        margin-left: 1.6rem;
+    }
+
+    /*subtitulos*/
+    .titulo-projetos, .titulo-sobre, .titulo-sobre-b, .titulo-integrantes, .titulo-contato
+    {
+        font-size: 18px;
+    }
+
+    /*titulos*/
+    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-info, .titulo-fale
+    {
+        font-size: 29px;
+    }
+}
+
+/* Media para ajustar novamente os cards da parte integrantes*/
+@media(max-width: 430px)
+{
+    .parte-externa
+    {
+        width: 180px;
+        height: 150px;
+    }
+    .parte-interna-um
+    {
+        width: 100%;
+        height: 100px;
+        padding-top: 7px;
+    }
+    .parte-interna-dois
+    {
+        width: 100%;
+        height: 100px;
+        padding-top: 7px;
+    }
+    .parte-interna-tres
+    {
+        padding-top: 7px;
+        width: 100%;
+        height: 100px;
+    }
+    .icone
+    {
+        padding-bottom: 1%;
+    }
+    .redes
+    {
+        width: 20px;
+        height: 19px;
+        margin-left: 1%;
+    }
+    .image-card-integrantes
+    {
+        width: 85px;
+        height: 85px;
+        align-items: center;
+    }
+    .nomes
+    {
+        font-family: "Dosis";
+        font-weight: 500;
+        color: #151515;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 375px)
+{
+    .box-img-header
+    {
+        width: 6rem;
+        height: 3rem;
+        margin-right: 0.2rem;
+    }
+    .item-menu
+    {
+        font-size: 13px;
+    }
+
+
+    form input
+    {
+        width: 15rem;
+    }
+    .organizador-para-parte-form-do-contato form textarea
+    {
+        width: 15rem;
+    }
+}
+
+
+@media(max-width: 345px)
+{
+    .header
+    {
+        justify-content: center;
+    }
+    ul
+    {
+        display: none;
+    }
+}
+
+
+
+
+
