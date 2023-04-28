@@ -1158,7 +1158,8 @@ form button:hover
     }
     .conteudo-apresentacao
     {
-        line-height: 1.8rem;
+        line-height:1.5rem;
+		margin-top: 0rem;
     }
     .apresentacao button
     {
@@ -1168,7 +1169,7 @@ form button:hover
     }
     .imagens-icones
     {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .imagens-icones img
     {
