@@ -152,7 +152,6 @@ ul
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4.5rem;
     gap: 0.2rem;
 }
 .imagens-icones img
@@ -801,27 +800,24 @@ form button:hover
     .apresentacao
     {
         width: 100%;
-        padding: 4rem;
+        padding: 4rem 4rem 0rem 4rem;
     }
     .apresentacao button
     {
         width: 15rem;
-        margin: 1.6rem;
-    }
-    .imagens-icones
-    {
-        margin-top:3rem;
+        margin: 1.8rem;
+        margin-bottom: 4rem;
     }
     .bloco-organizador-da-parte-apresentacao
     {
         display: flex;
         background-image:none;
-        height: 80vh;
+        height: 73vh;
     }
     .caixa-organizadora-para-separar-apresentacao-1
     {
         width: 100%;
-        height: 80vh;
+        height: 69vh;
     }
     .titulo-saiba
     {
@@ -915,6 +911,25 @@ form button:hover
         max-width: 85%;
     }
 }
+
+
+
+
+
+
+@media(max-width: 1015px)
+{
+    .bloco-organizador-da-parte-apresentacao
+    {
+        height: 75vh;
+    }
+    .caixa-organizadora-para-separar-apresentacao-1
+    {
+        height: 70vh;
+    }
+}
+
+
 
 
 
@@ -1112,6 +1127,23 @@ form button:hover
 
 
 
+@media(max-width: 783px)
+{
+    .bloco-organizador-da-parte-apresentacao
+    {
+        height: 80vh;
+    }
+    .caixa-organizadora-para-separar-apresentacao-1
+    {
+        height: 70vh;
+    }
+    .imagens-icones img
+    {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+}
+
 
 
 @media(max-width: 760px)
@@ -1142,10 +1174,18 @@ form button:hover
     {
         font-size: 15px;
     }
+    .bloco-organizador-da-parte-apresentacao
+    {
+        height: 55vh;
+    }
+    .caixa-organizadora-para-separar-apresentacao-1
+    {
+        height: 55vh;
+    }
     .apresentacao
     {
-        padding: 4rem;
-        height: 80vh;
+        padding: 3rem 3rem 1.5rem 3rem;
+        height: 55vh;
     }
     .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
     {
@@ -1167,14 +1207,10 @@ form button:hover
         width: 11rem;
         font-size: 20px;
     }
-    .imagens-icones
-    {
-        margin-top: 2rem;
-    }
     .imagens-icones img
     {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
     .escritos-para-contato
     {
@@ -1287,11 +1323,6 @@ form button:hover
     .titulo-sobre
     {
         margin-top: 2.5rem;
-    }
-    .imagens-icones img
-    {
-        width: 2.8rem;
-        height: 2.8rem;
     }
 }
 
