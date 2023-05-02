@@ -805,8 +805,7 @@ form button:hover
     .apresentacao button
     {
         width: 15rem;
-        margin: 1.8rem;
-        margin-bottom: 4rem;
+        margin: 1.5rem;
     }
     .bloco-organizador-da-parte-apresentacao
     {
@@ -1394,6 +1393,24 @@ form button:hover
 /* Media para ajustar novamente os cards da parte integrantes*/
 @media(max-width: 430px)
 {
+    .titulo-Empresa
+    {
+        margin-bottom: 1.5rem;
+    }
+    .conteudo-apresentacao
+    {
+        line-height: 1.5rem;
+    }
+    .titulo-conhecaNossa, .titulo-Empresa
+    {
+        font-size: 28px;
+    }
+    .box-img-header /*LOGO*/
+    {
+        margin-right: 0.2rem;
+    }
+
+
     .parte-externa
     {
         width: 180px;
@@ -1461,7 +1478,6 @@ form button:hover
     {
         font-size: 13px;
     }
-
     .cards
     {
         margin-top: 2.5rem;
@@ -1485,6 +1501,11 @@ form button:hover
     {
         display: none;
     }
+    .apresentação button 
+    {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
@@ -1499,6 +1520,18 @@ form button:hover
     .escritos-para-contato p 
     {
         font-size: 16px;
+    }
+}
+
+
+
+
+
+@media(max-width: 294px)
+{
+    .apresentacao button
+    {
+        margin: 0.9rem;
     }
 }
 
