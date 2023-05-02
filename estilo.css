@@ -1336,6 +1336,10 @@ form button:hover
         max-width: 100%;
         gap: 1rem;
     }
+    .apresentacao
+    {
+        padding: 1.5rem;
+    }
 }
 
 
@@ -1356,6 +1360,10 @@ form button:hover
     .item-menu
     {
         font-size: 13px;
+    }
+    .titulo-conhecaNossa, .titulo-Empresa
+    {
+        font-size: 32px;
     }
 
 
