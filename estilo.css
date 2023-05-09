@@ -27,7 +27,8 @@ body
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;  
-    height: 6rem;  
+    /* height: 6rem;   */
+    padding: 2rem;
 }
 .box-img-header /*LOGO*/
 {
@@ -44,7 +45,7 @@ body
 ul
 {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     list-style-type: none;
 }
 .item-menu 
@@ -53,7 +54,7 @@ ul
     font-family: 'Raleway', sans-serif;
     color: #1b1a1b;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 21px;
 }
 
 
@@ -66,21 +67,17 @@ ul
 .bloco-organizador-da-parte-apresentacao
 {
     display: flex;
-    background-image:url("img/img-sessao-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    height: 100vh;
 }
 .caixa-organizadora-para-separar-apresentacao-1
 {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    height: 100vh;
+    width: 48vw;
+    /* height: 100vh; */
 }
-.caixa-organizadora-para-separar-apresentacao-2
-{
-    height: 100vh;
-}
+
 .apresentacao
 {
     display: flex;
@@ -88,9 +85,16 @@ ul
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
-    padding: 7.5rem; 
-    padding-bottom: 3rem;   
+    height: 100%;
+    padding: 6rem 1rem 3rem 10rem;
+    gap: 1.5rem;
+}
+
+.apresentacao-conteudo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .espacinho-para-titulos-apresentacao
 {
@@ -103,26 +107,34 @@ ul
     font-family: 'Raleway', sans-serif;
     color:#693786;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 54px;
 }
 .titulo-Empresa
 {
     font-family: 'Raleway', sans-serif;
     color: #3ec9c0;
     font-weight: 700;
-    font-size: 50px; 
+    font-size: 54px; 
 }
 .conteudo-apresentacao
 {
     font-family: poppins, sans-serif;
     color: #1b1a1b;
     text-align: justify;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 2em;
     font-weight: 500;
     margin-top: 2rem;
     align-self: flex-start;
 }
+
+.box-botao
+{
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+}
+
 .apresentacao button
 {
     color: #ffffff;
@@ -133,10 +145,11 @@ ul
     background-color: #7322a6;
     border-radius: 0.5rem;
     padding: 0.2rem;
-    height: 3rem;
-    width: 11rem;
+    height: 3.5rem;
+    width: 13rem;
     transition: all 0.5s ease;  
     cursor: pointer;
+    margin: 1.5rem;
 }
 .apresentacao button:hover
 { 
@@ -151,10 +164,17 @@ ul
     justify-content: center;
     gap: 0.2rem;
 }
+
+.box-img-icone
+{
+    width: 60px;
+    height: 60px;
+}
 .imagens-icones img
 {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .img-apresentacao
 {
@@ -162,6 +182,26 @@ ul
    height: 100%;
    object-fit: cover;
 }
+
+.sessao-2-img
+{
+    background: url("img/foto-sessao-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    width: 52vw;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+/* .sessao-2-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
 
 
@@ -267,7 +307,7 @@ ul
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 60vh;
+    height: 30rem;
 }
 .img-buscamos
 {
@@ -289,6 +329,8 @@ ul
     width: 100%;
     height: 80rem;
     background-image: url(img/fundo-sessao-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,9 +473,10 @@ ul
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 60%;
-    padding: 5rem;
+    padding: 4rem;
     padding-top: 2rem;
 }
 .titulo-projetos
@@ -468,15 +511,23 @@ ul
 .organizador-para-projetos-2
 {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 40%;
-    height: 65vh;
+    background-color: #230f58;
 }
+
+.box-img-logo
+{
+    width: 90%;
+    height: 24%;
+}
+
 .img-projeto
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .projetos button
 {
@@ -626,7 +677,7 @@ form button:hover
     display: flex;
     flex-direction: column;
     width: 40vw;
-    height: 60vh;
+    /* height: 60vh; */
     margin-top: 2.7rem;
 }
 .para-guardar-o-texto
@@ -665,8 +716,23 @@ form button:hover
 
 
 
+
+
+
+
+
+
 /*Responsividade*/
 /*Cards*/
+@media (max-width: 1108px)
+{
+    .integrantes
+    {
+        background: url("img/fundo-mob.jpg");
+        height: auto;
+    }
+}
+
 @media (max-width: 1552px)
 {
     .cards
@@ -794,43 +860,19 @@ form button:hover
 
 @media(max-width:1500px)
 {
-    .apresentacao
-    {
-        width: 100%;
-        padding: 4rem 4rem 0rem 4rem;
-    }
-    .apresentacao button
-    {
-        width: 15rem;
-        margin: 1.5rem;
-    }
-    .bloco-organizador-da-parte-apresentacao
-    {
-        display: flex;
-        /* background-image:none; */
-        /* height: auto; */
-    }
-    .caixa-organizadora-para-separar-apresentacao-1
-    {
-        width: 70%;
-        /* height: auto; */
-    }
     .titulo-saiba
     {
         text-align: center;
     }
-    .oq-Buscamos
-    {
-        width: 100%;
-    }
+
     .organizador-para-buscamos-1
     {
         padding: 2rem;
-        width: 100%;
+        /* width: 100%; */
     }
     .organizador-para-buscamos-2
     {
-        display: none;
+        /* display: none; */
     }
     .titulo-sobre-b
     {
@@ -846,10 +888,6 @@ form button:hover
         text-align: center;
         margin: 4rem;
         margin-bottom: 6rem;
-    }
-    .img-buscamos
-    {
-        display: none;
     }
     .organizador-para-projetos-1
     {
@@ -892,11 +930,6 @@ form button:hover
         width: 100%;
         gap: 1rem;
     }
-
-    body h1
-    {
-        font-size: 20px;
-    }
 }
 
 
@@ -914,21 +947,6 @@ form button:hover
 }
 
 
-
-
-
-
-@media(max-width: 1015px)
-{
-    .bloco-organizador-da-parte-apresentacao
-    {
-        height: 75vh;
-    }
-    .caixa-organizadora-para-separar-apresentacao-1
-    {
-        height: 70vh;
-    }
-}
 
 
 
@@ -1057,6 +1075,7 @@ form button:hover
     .cards
     {
         max-width: 90%;
+        margin: 3rem;
     }
     .parte-externa
     {
@@ -1128,22 +1147,6 @@ form button:hover
 
 
 
-@media(max-width: 783px)
-{
-    .bloco-organizador-da-parte-apresentacao
-    {
-        height: 80vh;
-    }
-    .caixa-organizadora-para-separar-apresentacao-1
-    {
-        height: 70vh;
-    }
-    .imagens-icones img
-    {
-        width: 2.8rem;
-        height: 2.8rem;
-    }
-}
 
 
 
@@ -1163,56 +1166,7 @@ form button:hover
 
 @media (max-width: 680px)
 {
-    .box-img-header /*LOGO*/
-    {
-        margin-right: 0.5rem;
-    }
-    ul
-    {
-        gap: 1.3rem
-    }
-    .item-menu
-    {
-        font-size: 15px;
-    }
-    .bloco-organizador-da-parte-apresentacao
-    {
-        height: 55vh;
-    }
-    .caixa-organizadora-para-separar-apresentacao-1
-    {
-        height: 55vh;
-    }
-    .apresentacao
-    {
-        padding: 3rem 3rem 1.5rem 3rem;
-        height: 55vh;
-    }
-    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
-    {
-        font-size: 14px;
-        text-align: justify;
-    }
-    .titulo-conhecaNossa, .titulo-Empresa
-    {
-        font-size: 40px;
-    }
-    .conteudo-apresentacao
-    {
-        line-height:1.5rem;
-		margin-top: 0rem;
-    }
-    .apresentacao button
-    {
-        height: 2.4rem;
-        width: 11rem;
-        font-size: 20px;
-    }
-    .imagens-icones img
-    {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+   
     .escritos-para-contato
     {
         display: flex;
@@ -1336,7 +1290,6 @@ form button:hover
     .cards
     {
         max-width: 100%;
-        gap: 1rem;
     }
     .apresentacao
     {
@@ -1546,3 +1499,191 @@ form button:hover
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* SÂMILY - SESSÃO 1*/
+/* LARGURA */
+@media(max-width: 1496px)
+{
+    .apresentacao-conteudo
+    {
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 928px) 
+{
+    .sessao-2-img
+    {
+        display: none;
+    }
+    .caixa-organizadora-para-separar-apresentacao-1
+    {
+        width: 100vw;
+    }
+}
+
+
+
+
+/* ALTURA */
+@media(max-height: 974px)
+{
+    .apresentacao
+    {
+        padding: 4rem 1rem 3rem 10rem;
+    }
+}
+
+@media(max-height: 932px) and (max-width: 1573px)
+{
+    .item-menu
+    {
+        font-size: 18px;
+    }
+
+    .titulo-conhecaNossa, .titulo-Empresa
+    {
+        font-size: 44px;
+    }
+
+    .conteudo-apresentacao
+    {
+        font-size: 20px;
+    }
+
+    .apresentacao
+    {
+        padding: 4rem 1rem 3rem 10rem;
+    }
+
+    .apresentacao button
+    {
+        font-size: 22px;
+        height: 3rem;
+        width: 10.5rem;
+    }
+
+    .box-img-icone
+    {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media(max-height: 830px) and (max-width: 1475px)
+{
+    .apresentacao
+    {
+        padding: 2rem 0rem 2rem 6.5rem;
+    }
+}
+
+@media(max-height: 780px)
+{
+    .header
+    {
+        padding: 0.7rem;
+    }
+    .item-menu
+    {
+        font-size: 14px;
+    }
+
+    .titulo-conhecaNossa, .titulo-Empresa
+    {
+        font-size: 40px;
+    }
+
+    .conteudo-apresentacao
+    {
+        font-size: 16px;
+    }
+
+    .apresentacao button
+    {
+        font-size: 20px;
+        height: 2.5rem;
+        width: 9rem;
+    }
+
+    .box-img-icone
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media(max-height: 680px)
+{
+    .header
+    {
+        padding: 0.4rem;
+    }
+    .box-img-header
+    {
+        width: 8rem;
+        height: 4rem;
+        margin-right: 2rem;
+    }
+    .item-menu
+    {
+        font-size: 12px;
+    }
+
+    .titulo-conhecaNossa, .titulo-Empresa
+    {
+        font-size: 35px;
+    }
+
+    .conteudo-apresentacao
+    {
+        font-size: 14px;
+    }
+
+    .apresentacao-conteudo
+    {
+        gap: 0rem;
+    }
+    .apresentacao button
+    {
+        font-size: 18px;
+        height: 2.3rem;
+        width: 8rem;
+    }
+
+    .box-img-icone
+    {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-height: 679px) and (max-width: 920px)
+{
+    .apresentacao
+    {
+        padding: 4rem;
+    }
+}
+
+@media(max-height: 583px)
+{
+    .bloco-organizador-da-parte-apresentacao
+    {
+        height: auto;
+    }
+    .conteudo-apresentacao
+    {
+        line-height: 1.6rem;
+    }
+}
