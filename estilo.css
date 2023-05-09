@@ -860,49 +860,6 @@ form button:hover
 
 @media(max-width:1500px)
 {
-    .titulo-saiba
-    {
-        text-align: center;
-    }
-
-    .organizador-para-buscamos-1
-    {
-        padding: 2rem;
-        /* width: 100%; */
-    }
-    .organizador-para-buscamos-2
-    {
-        /* display: none; */
-    }
-    .titulo-sobre-b
-    {
-        align-self: center;
-    }
-    .titulo-buscamos
-    {
-        align-self: center;
-        text-align: center;
-    }
-    .conteudo-buscamos
-    {
-        text-align: center;
-        margin: 4rem;
-        margin-bottom: 6rem;
-    }
-    .organizador-para-projetos-1
-    {
-        width: 100%;
-        padding: 3rem;
-        padding-top: 2rem;
-    }
-    .organizador-para-projetos-2
-    {
-        display: none;
-    }
-    .projetos button
-    {
-        width: 15rem;
-    }
     .cards
     {
         gap: 2rem;
@@ -955,32 +912,7 @@ form button:hover
 
 @media(max-width:1000px)
 {  
-    .conteudo-sobre
-    {
-        padding: 0rem;
-        margin: 2rem;
-        margin-bottom: 5rem;
-    }
-    .titulo-sobre-b
-    {
-        margin-top: 1rem;
-    }
-    .titulo-veja,.conteudo-projetos
-    {
-        margin: 0;
-        padding: 0;
-    }
-    .titulo-buscamos, .titulo-veja
-    {
-        margin-bottom: 2rem;
-    }
-    .conteudo-buscamos
-    {
-        text-align: center;
-        margin: 0rem;
-        margin-bottom: 3rem;
-    }
-   
+
     /*Rodapé*/
     .contato
     {
@@ -1138,10 +1070,6 @@ form button:hover
     {
         width: 32.5rem;
     }
-    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale, .titulo-info
-    {
-        font-size: 42px;
-    }
 
 }
 
@@ -1149,14 +1077,6 @@ form button:hover
 
 
 
-
-@media(max-width: 760px)
-{
-    .box-img-header
-    {
-        margin-right: 1.9rem;
-    }
-}
 
 
 
@@ -1177,51 +1097,11 @@ form button:hover
         height: 13rem;
         line-height: 2rem;
     }
-    .titulo-buscamos
-    {
-        margin-bottom: 0.3rem;
-    }
-    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-fale
-    {
-        font-size: 33px;
-        text-align: center;
-    }
+
     .titulo-info
     {
         font-size: 35px;
     }
-    .conteudo-buscamos
-    {
-        text-align: justify; 
-        padding: 0;
-        margin: 0.7rem;
-        margin-top: 1rem; 
-    }
-    .conteudo-sobre
-    {
-        text-align: justify; 
-        padding: 0; 
-        margin: 2rem;
-    }
-    .organizador-para-projetos-1
-    {
-        padding: 1rem;
-    }
-    .conteudo-projetos
-    {
-        text-align: justify;  
-        padding: 0;
-        margin: 1rem;
-    }
-    .projetos button
-    {
-        height: 2.4rem;
-        width: 11rem;
-        font-size: 20px;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem ;
-    }
-
 
     /*Rodapé*/
     form
@@ -1267,18 +1147,6 @@ form button:hover
     {
         width: 68vw;
     }
-    .apresentacao
-    {
-        padding: 2.5rem;
-    }
-    .titulo-saiba
-    {
-        padding: 0.5rem;
-    }
-    .titulo-sobre
-    {
-        margin-top: 2.5rem;
-    }
 }
 
 
@@ -1291,10 +1159,6 @@ form button:hover
     {
         max-width: 100%;
     }
-    .apresentacao
-    {
-        padding: 1.5rem;
-    }
 }
 
 
@@ -1303,24 +1167,6 @@ form button:hover
 
 @media(max-width: 450px)
 {
-    .box-img-header
-    {
-        width: 7rem;
-        height: 3rem;
-    }
-    ul
-    {
-        gap: 1rem;
-    }
-    .item-menu
-    {
-        font-size: 13px;
-    }
-    .titulo-conhecaNossa, .titulo-Empresa
-    {
-        font-size: 32px;
-    }
-
 
     /*Form*/
     .titulos-do-contato
@@ -1339,41 +1185,12 @@ form button:hover
     {
         margin-left: 1.6rem;
     }
-
-    /*subtitulos*/
-    .titulo-projetos, .titulo-sobre, .titulo-sobre-b, .titulo-integrantes, .titulo-contato
-    {
-        font-size: 18px;
-    }
-
-    /*titulos*/
-    .titulo-saiba, .titulo-buscamos, .titulo-conheca-nos, .titulo-veja, .titulo-info, .titulo-fale
-    {
-        font-size: 29px;
-    }
 }
 
 /* Media para ajustar novamente os cards da parte integrantes*/
 @media(max-width: 430px)
 {
-    .titulo-Empresa
-    {
-        margin-bottom: 1.5rem;
-    }
-    .conteudo-apresentacao
-    {
-        line-height: 1.5rem;
-    }
-    .titulo-conhecaNossa, .titulo-Empresa
-    {
-        font-size: 28px;
-    }
-    .box-img-header /*LOGO*/
-    {
-        margin-right: 0.2rem;
-    }
-
-
+   
     .parte-externa
     {
         width: 180px;
@@ -1396,16 +1213,6 @@ form button:hover
         padding-top: 7px;
         width: 100%;
         height: 100px;
-    }
-    .icone
-    {
-        padding-bottom: 1%;
-    }
-    .redes
-    {
-        width: 20px;
-        height: 19px;
-        margin-left: 1%;
     }
     .image-card-integrantes
     {
@@ -1431,16 +1238,6 @@ form button:hover
 
 @media(max-width: 375px)
 {
-    .box-img-header
-    {
-        width: 6rem;
-        height: 3rem;
-        margin-right: 0.2rem;
-    }
-    .item-menu
-    {
-        font-size: 13px;
-    }
     .cards
     {
         margin-top: 2.5rem;
@@ -1454,22 +1251,6 @@ form button:hover
 
 
 
-@media(max-width: 345px)
-{
-    .header
-    {
-        justify-content: center;
-    }
-    ul
-    {
-        display: none;
-    }
-    .apresentação button 
-    {
-        margin: 0;
-        padding: 0;
-    }
-}
 
 
 
@@ -1489,14 +1270,6 @@ form button:hover
 
 
 
-
-@media(max-width: 294px)
-{
-    .apresentacao button
-    {
-        margin: 0.9rem;
-    }
-}
 
 
 
@@ -1550,7 +1323,14 @@ form button:hover
         font-size: 18px;
     }
 
-    .titulo-conhecaNossa, .titulo-Empresa
+    .titulo-conhecaNossa, 
+    .titulo-Empresa, 
+    .titulo-saiba, 
+    .titulo-buscamos, 
+    .titulo-conheca-nos, 
+    .titulo-veja,
+    .titulo-fale,
+    .titulo-info
     {
         font-size: 44px;
     }
@@ -1603,7 +1383,7 @@ form button:hover
         font-size: 40px;
     }
 
-    .conteudo-apresentacao
+    .conteudo-apresentacao, .conteudo-sobre, .conteudo-buscamos, .conteudo-projetos
     {
         font-size: 16px;
     }
