@@ -135,7 +135,7 @@ ul
     margin-top: 1rem;
 }
 
-.apresentacao button
+.apresentacao button, .projetos button
 {
     color: #ffffff;
     font-weight: 500;
@@ -235,14 +235,15 @@ ul
     color: #fff;
     font-weight: 400;
     font-size: 50px;
-    justify-content:center; 
+    justify-content: center;
+    text-align: center; 
 }
 .conteudo-sobre
 {
     display: flex;
     justify-content:center;
     text-align: center;
-    margin: 5rem 5rem 8rem 5rem;
+    margin: 4rem 9rem 5rem 9rem;
     font-family: poppins, sans-serif;
     color: #fff;
     font-size: 20px;
@@ -270,7 +271,7 @@ ul
     flex-direction: column;
     align-items: center;
     width: 50vw;
-    padding: 5rem;
+    padding: 5rem 5rem 0rem 5rem;
     padding-top: 2rem;
 }
 .titulo-sobre-b
@@ -304,17 +305,20 @@ ul
 }
 .organizador-para-buscamos-2
 {
+    background: url("img/foto-sessao-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     width: 50vw;
     height: 30rem;
 }
-.img-buscamos
+/* .img-buscamos
 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 
 
@@ -358,6 +362,7 @@ ul
     font-weight: 400;
     font-size: 50px;
     justify-content:center; 
+    text-align: center;
 }
 .cards
 {
@@ -476,8 +481,7 @@ ul
     justify-content: center;
     align-items: center;
     width: 60%;
-    padding: 4rem;
-    padding-top: 2rem;
+    padding: 2rem 5rem 2rem 5rem;
 }
 .titulo-projetos
 {
@@ -497,11 +501,12 @@ ul
     font-weight: 400;
     font-size: 50px;
     align-self: center;
+    text-align: center;
 }
 .conteudo-projetos
 {
-    text-align: center;
-    margin-top: 4rem;
+    text-align: justify;
+    margin: 3rem 0rem 2rem 0rem;
     font-family: poppins, sans-serif;
     color: #000;
     font-size: 20px;
@@ -533,23 +538,10 @@ ul
 {
     border: 1px solid #1d4ba0;
     background-color: #1d4ba0;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    margin-top: 3rem;
-    height: 3rem;
-    width: 11rem;
-    transition: all 0.5s ease;  
-    cursor: pointer;
 }
 .projetos button:hover
 { 
     background-color: white;
-    border: 1px solid #1d4ba0;
     color: #1d4ba0;
 }
 
@@ -803,7 +795,7 @@ form button:hover
 
 
 /* RODAPÉ */
-@media(max-width: 1518px)
+/* @media(max-width: 1518px)
 {
     .contato
     {
@@ -851,7 +843,7 @@ form button:hover
         width: 100%;
         gap: 2rem;
     }
-}
+} */
 
 
 
@@ -873,7 +865,7 @@ form button:hover
 
 
 /*Rodapé*/
-@media(max-width: 1339px)
+/* @media(max-width: 1339px)
 {
     .escritos-para-contato
     {
@@ -887,7 +879,7 @@ form button:hover
         width: 100%;
         gap: 1rem;
     }
-}
+} */
 
 
 
@@ -1302,6 +1294,10 @@ form button:hover
     {
         width: 100vw;
     }
+    .bloco-organizador-da-parte-apresentacao
+    {
+        height: auto;
+    }
 }
 
 
@@ -1316,7 +1312,7 @@ form button:hover
     }
 }
 
-@media(max-height: 932px) and (max-width: 1573px)
+@media /* (max-height: 932px) and  */ (max-width: 1573px) 
 {
     .item-menu
     {
@@ -1345,7 +1341,7 @@ form button:hover
         padding: 4rem 1rem 3rem 10rem;
     }
 
-    .apresentacao button
+    .apresentacao button, .projetos button
     {
         font-size: 22px;
         height: 3rem;
@@ -1357,9 +1353,14 @@ form button:hover
         width: 55px;
         height: 55px;
     }
+    .box-img-logo
+    {
+        width: 80%;
+        height: 18%;
+    }
 }
 
-@media(max-height: 830px) and (max-width: 1475px)
+@media /* (max-height: 830px) and */ (max-width: 1475px)
 {
     .apresentacao
     {
@@ -1367,7 +1368,7 @@ form button:hover
     }
 }
 
-@media(max-height: 780px)
+@media /* (max-height: 780px) */ (max-width: 1407px)
 {
     .header
     {
@@ -1388,7 +1389,7 @@ form button:hover
         font-size: 16px;
     }
 
-    .apresentacao button
+    .apresentacao button, .projetos button
     {
         font-size: 20px;
         height: 2.5rem;
@@ -1400,10 +1401,14 @@ form button:hover
         width: 50px;
         height: 50px;
     }
+    .organizador-para-buscamos-2
+    {
+        height: 25rem;
+    }
 }
 
 
-@media(max-height: 680px)
+@media /* (max-height: 680px) */(max-width: 1131px)
 {
     .header
     {
@@ -1420,12 +1425,20 @@ form button:hover
         font-size: 12px;
     }
 
-    .titulo-conhecaNossa, .titulo-Empresa
+    .titulo-conhecaNossa, 
+    .titulo-saiba, 
+    .titulo-Empresa, 
+    .titulo-buscamos, 
+    .titulo-conheca-nos,
+    .titulo-veja
     {
         font-size: 35px;
     }
 
-    .conteudo-apresentacao
+    .conteudo-apresentacao, 
+    .conteudo-sobre, 
+    .conteudo-buscamos, 
+    .conteudo-projetos
     {
         font-size: 14px;
     }
@@ -1434,7 +1447,7 @@ form button:hover
     {
         gap: 0rem;
     }
-    .apresentacao button
+    .apresentacao button, .projetos button
     {
         font-size: 18px;
         height: 2.3rem;
@@ -1446,9 +1459,21 @@ form button:hover
         width: 40px;
         height: 40px;
     }
+    .organizador-para-buscamos-2
+    {
+        height: 23rem;
+    }
+    .organizador-para-buscamos-1
+    {
+        padding: 2rem 4rem 0rem 4rem;
+    }
+    .conteudo-sobre
+    {
+        margin: 4rem 6rem 5rem 6rem;
+    }
 }
 
-@media(max-height: 679px) and (max-width: 920px)
+@media /* (max-height: 679px) and */(max-width: 920px)
 {
     .apresentacao
     {
@@ -1456,7 +1481,48 @@ form button:hover
     }
 }
 
-@media(max-height: 583px)
+@media(max-width: 1044px)
+{
+    .organizador-para-buscamos-1
+    {
+        width: 60vw;
+        padding: 1rem 3rem 0rem 3rem;
+    }
+    
+    .organizador-para-buscamos-2
+    {
+        width: 40vw;
+    }  
+    .organizador-para-projetos-1
+    {
+        width: 60vw;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+}
+
+@media(max-width: 931px)
+{
+    .organizador-para-buscamos-1
+    {
+        width: 100vw;
+        padding: 1rem 3rem 3rem 3rem;
+    }
+    .organizador-para-buscamos-2, .organizador-para-projetos-2
+    {
+        display: none;
+    }   
+    .organizador-para-projetos-1
+    {
+        width: 100vw;
+    }
+    .conteudo-sobre
+    {
+        margin: 4rem 3rem 5rem 3rem;
+        text-align: justify;
+    }
+}
+
+@media(max-width: 583px)
 {
     .bloco-organizador-da-parte-apresentacao
     {
@@ -1466,4 +1532,9 @@ form button:hover
     {
         line-height: 1.6rem;
     }
+    .apresentacao
+    {
+        padding: 2rem;
+    }
 }
+
