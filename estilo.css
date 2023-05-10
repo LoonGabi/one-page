@@ -55,8 +55,13 @@ ul
     color: #1b1a1b;
     font-weight: 600;
     font-size: 21px;
+    transition: all 0.5s ease;
 }
 
+.item-menu:hover
+{
+    color: #a24bd4;
+}
 
 
 
@@ -243,7 +248,7 @@ ul
     display: flex;
     justify-content:center;
     text-align: center;
-    margin: 4rem 9rem 5rem 9rem;
+    margin: 4rem 9rem 7rem 9rem;
     font-family: poppins, sans-serif;
     color: #fff;
     font-size: 20px;
@@ -506,7 +511,7 @@ ul
 .conteudo-projetos
 {
     text-align: justify;
-    margin: 3rem 0rem 2rem 0rem;
+    margin-top: 2rem;
     font-family: poppins, sans-serif;
     color: #000;
     font-size: 20px;
@@ -1128,29 +1133,6 @@ form button:hover
     {
         margin-top: 2.5rem;
     }
-
-    form input, .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 15rem;
-    }
-}
-
-
-
-
-
-
-
-@media(max-width: 300px)
-{
-    form input, .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 12rem;
-    }
-    .escritos-para-contato p 
-    {
-        font-size: 16px;
-    }
 }
 
 
@@ -1168,8 +1150,15 @@ form button:hover
 
 
 
-/* SÂMILY - SESSÃO 1*/
-/* LARGURA */
+
+
+
+
+
+
+
+
+/* SÂMILY */
 @media(max-width: 1496px)
 {
     .apresentacao-conteudo
@@ -1195,9 +1184,6 @@ form button:hover
 }
 
 
-
-
-/* ALTURA */
 @media(max-height: 974px)
 {
     .apresentacao
@@ -1206,7 +1192,7 @@ form button:hover
     }
 }
 
-@media /* (max-height: 932px) and  */ (max-width: 1573px) 
+@media(max-width: 1573px) 
 {
     .item-menu
     {
@@ -1254,7 +1240,7 @@ form button:hover
     }
 }
 
-@media /* (max-height: 830px) and */ (max-width: 1475px)
+@media(max-width: 1475px)
 {
     .apresentacao
     {
@@ -1262,7 +1248,7 @@ form button:hover
     }
 }
 
-@media /* (max-height: 780px) */ (max-width: 1407px)
+@media(max-width: 1407px)
 {
     .header
     {
@@ -1288,6 +1274,11 @@ form button:hover
         font-size: 16px;
     }
 
+    .conteudo-sobre
+    {
+        margin: 4rem 9rem 5rem 9rem;
+    }
+
     .apresentacao button, .projetos button, form button
     {
         font-size: 20px;
@@ -1311,7 +1302,7 @@ form button:hover
 }
 
 
-@media /* (max-height: 680px) */(max-width: 1131px)
+@media(max-width: 1131px)
 {
     .header
     {
@@ -1338,6 +1329,15 @@ form button:hover
     .titulo-info
     {
         font-size: 35px;
+    }
+
+    .titulo-sobre,
+    .titulo-sobre-b,
+    .titulo-integrantes,
+    .titulo-projetos,
+    .titulo-contato
+    {
+        font-size: 22px;
     }
 
     .conteudo-apresentacao, 
@@ -1384,11 +1384,11 @@ form button:hover
     }
 }
 
-@media /* (max-height: 679px) and */(max-width: 920px)
+@media(max-width: 920px)
 {
     .apresentacao
     {
-        padding: 4rem;
+        padding: 4rem 4rem 2rem 4rem;
     }
 }
 
@@ -1413,6 +1413,11 @@ form button:hover
 
 @media(max-width: 931px)
 {
+    .espacinho-para-titulos-apresentacao
+    {
+        align-self: center;
+        align-items: center;
+    }
     .organizador-para-buscamos-1
     {
         width: 100vw;
@@ -1422,6 +1427,10 @@ form button:hover
     {
         display: none;
     }   
+    .titulo-sobre-b, .titulo-buscamos
+    {
+        align-self: center;
+    }
     .organizador-para-projetos-1
     {
         width: 100vw;
@@ -1473,6 +1482,69 @@ form button:hover
     {
         margin-bottom: 0rem;
     }
+    .escritos-para-contato
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .box-texto-info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-contato, .titulo-fale
+    {
+        align-self: center;
+    }
+    .titulo-info
+    {
+        align-self: center;
+    }
+}
+
+@media(max-width: 624px)
+{
+    .titulo-conhecaNossa, 
+    .titulo-saiba, 
+    .titulo-Empresa, 
+    .titulo-buscamos, 
+    .titulo-conheca-nos,
+    .titulo-veja,
+    .titulo-fale,
+    .titulo-info
+    {
+        font-size: 30px;
+    }
+ 
+    .titulo-sobre,
+    .titulo-sobre-b,
+    .titulo-integrantes,
+    .titulo-projetos,
+    .titulo-contato
+    {
+        font-size: 18px;
+    }
+
+    .titulo-sobre-b
+    {
+        margin-top: 0%;
+    }
+
+    .conteudo-sobre
+    {
+        margin: 2rem;
+    }
+
+    .apresentacao,
+    .organizador-para-buscamos-1
+    {
+        padding: 2rem;
+    }
+    .organizador-para-projetos-1
+    {
+        padding: 1rem 2rem 1rem 2rem;
+    }
 }
 
 @media(max-width: 583px)
@@ -1493,5 +1565,90 @@ form button:hover
     {
         width: 70vw;
     }
+    .titulo-sobre,
+    .titulo-saiba
+    {
+        margin: 0rem 2rem 0rem 2rem;
+    }
+    .titulo-sobre
+    {
+        margin-top: 2rem
+    }
 }
 
+@media(max-width: 486px)
+{
+    .header ul
+    {
+        display: none;
+    }
+    .escritos-para-contato
+    {
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .box-texto-info
+    {
+        align-items: center;
+    }
+}
+
+@media(max-width: 457px)
+{
+    form input, form textarea
+    {
+        width: 85vw;
+    }
+ 
+    .titulo-saiba, 
+    .titulo-buscamos, 
+    .titulo-conheca-nos,
+    .titulo-veja,
+    .titulo-fale,
+    .titulo-info
+    {
+        font-size: 25px;
+    }
+
+    
+    .titulo-sobre,
+    .titulo-sobre-b,
+    .titulo-integrantes,
+    .titulo-projetos,
+    .titulo-contato
+    {
+        font-size: 16px;
+    }
+
+    .conteudo-apresentacao, 
+    .conteudo-sobre, 
+    .conteudo-buscamos, 
+    .conteudo-projetos,
+    .escritos-para-contato p,
+    form label
+    {
+        font-size: 12px;
+    }
+    .apresentacao button, .projetos button, form button
+    {
+        width: 7rem;
+        height: 2rem;
+        font-size: 16px;
+    }
+    .box-img-icone
+    {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media(max-width: 327px)
+{
+    .titulo-conhecaNossa,
+    .titulo-Empresa
+    {
+        font-size: 25px;
+    }
+}
