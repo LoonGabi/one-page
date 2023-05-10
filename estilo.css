@@ -135,7 +135,7 @@ ul
     margin-top: 1rem;
 }
 
-.apresentacao button, .projetos button
+.apresentacao button, .projetos button, form button
 {
     color: #ffffff;
     font-weight: 500;
@@ -562,14 +562,16 @@ ul
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 60vw;
 }
 .titulos-do-contato
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding-left: 4rem;
     margin-top: 3rem;
-    margin-left: 5rem;
 }
 .titulo-contato
 {
@@ -592,9 +594,9 @@ ul
 form
 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
-    margin-left: 5rem;
     max-width: 85%;
     gap: 1.3rem;
 }
@@ -629,7 +631,7 @@ form textarea
     border: 1px solid #fff;
     color: #fff;
     height: 10rem;
-    width: 100%;
+    width: 48vw;
     outline: none;
     resize: none;
 }
@@ -647,16 +649,6 @@ form button
     border: 1px solid #ffffff;
     background-color: #232b5a;
     color: #ffffff;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    margin-top: 2rem;
-    height: 3rem;
-    width: 10rem;
-    transition: all 0.5s ease;  
-    cursor: pointer;
 }
 form button:hover
 { 
@@ -677,7 +669,7 @@ form button:hover
     display: flex;
     flex-direction: column;
     padding: 1rem 0.1rem 5rem 2.5rem;
-    margin: 1.2rem;
+    margin: 1.2rem 0rem 1.2rem 0rem;
     height: 100%;
     border-left: 2px solid #ffffff;
 }
@@ -901,11 +893,11 @@ form button:hover
 
 
 
-
+/* 
 @media(max-width:1000px)
 {  
 
-    /*Rodapé*/
+    /*Rodapé
     .contato
     {
         flex-direction: column;
@@ -984,7 +976,7 @@ form button:hover
         font-size: 20px;
         margin-top: 0;
     }
-}  
+}   */
 
 
 
@@ -1057,12 +1049,6 @@ form button:hover
         font-size: 12px;
     }
 
-
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 32.5rem;
-    }
-
 }
 
 
@@ -1071,75 +1057,6 @@ form button:hover
 
 
 
-
-
-
-
-
-@media (max-width: 680px)
-{
-   
-    .escritos-para-contato
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        height: 13rem;
-        line-height: 2rem;
-    }
-
-    .titulo-info
-    {
-        font-size: 35px;
-    }
-
-    /*Rodapé*/
-    form
-    {
-        margin-left: 2rem;
-    }
-    form input
-    {
-        width: 23rem;
-    }
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 23rem;
-    }
-    .para-guardar-o-texto
-    {
-        margin-left: 3rem;
-    }
-    .escritos-para-contato
-    {
-        font-size: 18px;
-    }
-    .titulo-info
-    {
-        padding-left: 2rem;
-    }
-    .conteudo-apresentacao, .conteudo-buscamos, .conteudo-projetos, .conteudo-sobre
-    {
-        text-align: justify;
-    }
-   
-}
-
-
-
-
-
-
-
-@media (max-width: 577px)
-{
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 68vw;
-    }
-}
 
 
 
@@ -1155,29 +1072,6 @@ form button:hover
 
 
 
-
-
-@media(max-width: 450px)
-{
-
-    /*Form*/
-    .titulos-do-contato
-    {
-        margin-left: 2rem;
-    }
-    .titulo-info
-    {
-        padding-left: 0;
-    }
-    form input
-    {
-        width: 19rem;
-    }
-    .para-guardar-o-texto
-    {
-        margin-left: 1.6rem;
-    }
-}
 
 /* Media para ajustar novamente os cards da parte integrantes*/
 @media(max-width: 430px)
@@ -1341,7 +1235,7 @@ form button:hover
         padding: 4rem 1rem 3rem 10rem;
     }
 
-    .apresentacao button, .projetos button
+    .apresentacao button, .projetos button, form button
     {
         font-size: 22px;
         height: 3rem;
@@ -1384,12 +1278,17 @@ form button:hover
         font-size: 40px;
     }
 
-    .conteudo-apresentacao, .conteudo-sobre, .conteudo-buscamos, .conteudo-projetos
+    .conteudo-apresentacao, 
+    .conteudo-sobre, 
+    .conteudo-buscamos, 
+    .conteudo-projetos, 
+    .escritos-para-contato p, 
+    form label
     {
         font-size: 16px;
     }
 
-    .apresentacao button, .projetos button
+    .apresentacao button, .projetos button, form button
     {
         font-size: 20px;
         height: 2.5rem;
@@ -1404,6 +1303,10 @@ form button:hover
     .organizador-para-buscamos-2
     {
         height: 25rem;
+    }
+    form textarea
+    {
+        height: 7rem;
     }
 }
 
@@ -1430,7 +1333,9 @@ form button:hover
     .titulo-Empresa, 
     .titulo-buscamos, 
     .titulo-conheca-nos,
-    .titulo-veja
+    .titulo-veja,
+    .titulo-fale,
+    .titulo-info
     {
         font-size: 35px;
     }
@@ -1438,7 +1343,9 @@ form button:hover
     .conteudo-apresentacao, 
     .conteudo-sobre, 
     .conteudo-buscamos, 
-    .conteudo-projetos
+    .conteudo-projetos,
+    .escritos-para-contato p,
+    form label
     {
         font-size: 14px;
     }
@@ -1470,6 +1377,10 @@ form button:hover
     .conteudo-sobre
     {
         margin: 4rem 6rem 5rem 6rem;
+    }
+    .apoio-para-organizar-os-inputs
+    {
+        line-height: 3.7rem;
     }
 }
 
@@ -1520,6 +1431,48 @@ form button:hover
         margin: 4rem 3rem 5rem 3rem;
         text-align: justify;
     }
+    .contato
+    {
+        flex-direction: column;
+    }
+    .organizador-para-parte-form-do-contato, .organizador-para-parte-info-do-contato
+    {
+        width: 100vw;
+        align-items: center;
+    }
+    .organizador-para-parte-info-do-contato
+    {
+        border-top: 1px solid #fff;
+    }
+    .para-guardar-o-texto
+    {
+        border-left: none;
+        border-left: 0;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .escritos-para-contato
+    {
+        padding-top: 3rem;
+        line-height: 2.4rem;
+    }
+    form input
+    {
+        width: 23vw;
+    }
+    form textarea
+    {
+        width: 74vw;
+    }
+    .titulos-do-contato
+    {
+        padding-left: 0;
+        width: auto;
+        justify-content: center;
+    }
+    .apoio-para-organizar-o-button
+    {
+        margin-bottom: 0rem;
+    }
 }
 
 @media(max-width: 583px)
@@ -1535,6 +1488,10 @@ form button:hover
     .apresentacao
     {
         padding: 2rem;
+    }
+    form input, form textarea
+    {
+        width: 70vw;
     }
 }
 
