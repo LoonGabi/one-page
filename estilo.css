@@ -459,10 +459,11 @@ ul
 }
 .nomes
 {
-    font-family: "Dosis";
-    font-weight: Medium 500;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
     color: #151515;
-    padding-top: 3%;
+    font-size: 13px;
+    padding-top: 5%;
     padding-bottom: 3%;
 }
 
@@ -776,14 +777,7 @@ form button:hover
         height: 120px;
         align-items: center;
     }
-    .nomes
-    {
-        font-family: "Dosis";
-        font-weight: Medium 500;
-        color: #151515;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
+
 }
 
 
@@ -1046,12 +1040,7 @@ form button:hover
     }
     .nomes
     {
-        font-family: "Dosis";
-        font-weight: 500;
-        color: #151515;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        font-size: 12px;
+        font-size: 11px;
     }
 
 }
@@ -1113,12 +1102,7 @@ form button:hover
     }
     .nomes
     {
-        font-family: "Dosis";
-        font-weight: 500;
-        color: #151515;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
