@@ -29,6 +29,7 @@ body
     align-items: center;  
     /* height: 6rem;   */
     padding: 2rem;
+    position: fixed;
 }
 .box-img-header /*LOGO*/
 {
@@ -785,62 +786,6 @@ form button:hover
 
 
 
-/* RODAPÉ */
-/* @media(max-width: 1518px)
-{
-    .contato
-    {
-        flex-direction: column;
-    }
-    .organizador-para-parte-form-do-contato
-    {
-        width: 100vw;
-    }
-    .organizador-para-parte-form-do-contato form
-    {
-        justify-content: center;
-    }
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 49vw;
-    }
-    .organizador-para-parte-info-do-contato
-    {
-        width: 100vw;
-        height: auto;
-    }
-    .para-guardar-o-texto
-    {
-        border-left: none;
-        align-items: center;
-        justify-content: center;
-        width: 89vw;
-        margin-left: 5rem;
-        padding-left: 0;
-        border-top: 2px solid #fff ;
-    }
-    .titulo-info
-    {
-        align-self: left;
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .escritos-para-contato
-    {
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-        padding-top: 0;
-        width: 100%;
-        gap: 2rem;
-    }
-} */
-
-
-
-
-
-
 @media(max-width:1500px)
 {
     .cards
@@ -853,24 +798,6 @@ form button:hover
 
 
 
-
-
-/*Rodapé*/
-/* @media(max-width: 1339px)
-{
-    .escritos-para-contato
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-self: center;
-        flex-wrap: wrap;
-        height: 8rem;
-        width: 100%;
-        gap: 1rem;
-    }
-} */
 
 
 
@@ -889,93 +816,6 @@ form button:hover
 
 
 
-
-
-
-/* 
-@media(max-width:1000px)
-{  
-
-    /*Rodapé
-    .contato
-    {
-        flex-direction: column;
-    }
-    .titulos-do-contato
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-    }
-    form
-    {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 3rem;
-        width: 80%;
-        gap: 1.5rem;
-    }
-    .caixa-para-separar-os-iputs-do-textarea
-    {
-        flex-direction: row;
-        gap: 4rem;
-    }
-    .apoio-para-organizar-os-inputs
-    {
-        flex-direction: column;
-        line-height: 5rem;
-    }
-    form input
-    {
-        width: 10rem;
-    }
-    form textarea
-    {
-        border: 1px solid #fff;
-    }
-    .organizador-para-parte-form-do-contato form textarea
-    {
-        width: 53vw;
-    }
-    .apoio-para-organizar-o-button
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    form button
-    {
-        font-size: 20px;
-        border-radius: 0.5rem;
-        padding: 0.2rem;
-        margin-top: 2rem;
-        height: 3rem;
-        width: 12rem;
-    }
-    .organizador-para-parte-info-do-contato
-    {
-        border-top: 2px solid #fff ;
-    }
-    .para-guardar-o-texto
-    {
-        display: flex;
-        border-top: 0;
-        border: none;
-    }
-    .titulo-info
-    {
-        margin-bottom: 1.5rem;
-    }
-    .escritos-para-contato
-    {
-        text-align: center;
-        font-size: 20px;
-        margin-top: 0;
-    }
-}   */
 
 
 
@@ -1118,19 +958,6 @@ form button:hover
         margin-top: 2.5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
