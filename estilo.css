@@ -29,7 +29,9 @@ body
     align-items: center;  
     /* height: 6rem;   */
     padding: 2rem;
-    position: fixed;
+    /* position: fixed; */
+    transition: all 0.5s ease;
+    /* z-index: 9999; */
 }
 .box-img-header /*LOGO*/
 {
