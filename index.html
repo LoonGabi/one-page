@@ -6,17 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" text-type="text" href="estilo.css">
         <link rel="icon" href="img/logo.png">
+        <!-- LINK ICONES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>AION</title>
     </head>
     <body>
-        <div class="bloco-organizador-da-parte-apresentacao">
+
+        <a href="#bloco-organizador-da-parte-apresentacao" class="seta-subir"><i class="fa-solid fa-arrow-up"></i></a>
+        
+        <div class="bloco-organizador-da-parte-apresentacao" id="bloco-organizador-da-parte-apresentacao">
             <div class="sessao-2-img"></div>
             <div class="caixa-organizadora-para-separar-apresentacao-1">
-
+                
                 <div class="header">
                     <div class="box-img-header">
                         <img src="img/logo.png" alt="logo do site">
                     </div>
+
+                     <!-- BOTÃO PRA ESCONDER E APARECER OS TÓPICOS -->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label>
                     <ul class="cabecalho-menu-itens">
                         <a class="item-menu" href="#Sobre">Sobre</a>
                         <a class="item-menu" href="#Integrantes">Integrantes</a>
@@ -36,22 +47,26 @@
                             a sociedade com suas questões, resolvendo com êxito e a base de tecnologia.
                         </p>
                         <div class="box-botao">
-                            <button>SOBRE</button>
+                            <a href="#sobre"><button>SOBRE</button></a>
                         </div>                      
                     </div>
                    
                     <div class="imagens-icones">
-                        <div class="box-img-icone">
-                            <img src="img/instagram.png" alt="icon do Instagram">
+                        <div class="box-img-icone" id="icon-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <!-- <img src="img/instagram.png" alt="icon do Instagram"> -->
                         </div>
-                        <div class="box-img-icone">
-                            <img src="img/youtube.png" alt="icon do Youtube">
+                        <div class="box-img-icone" id="icon-youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                            <!-- <img src="img/youtube.png" alt="icon do Youtube"> -->
                         </div>
-                        <div class="box-img-icone">
-                            <img src="img/facebook.png" alt="icon do Facebook">
+                        <div class="box-img-icone" id="icon-facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <!-- <img src="img/facebook.png" alt="icon do Facebook"> -->
                         </div>
-                        <div class="box-img-icone">
-                            <img src="img/github.png" alt="icon do GitHub">
+                        <div class="icon-github">
+                            <i id="icon-github" class="fa-brands fa-github"></i>
+                            <!-- <img src="img/github.png" alt="icon do GitHub"> -->
                         </div>                   
                     </div>
                 </div>
@@ -63,8 +78,10 @@
         <div id="Sobre" class="sobre">
             <h2 class="titulo-sobre">Sobre</h2>
             <h1 class="titulo-saiba">Saiba um pouco mais sobre nós</h1>
-            <p class="conteudo-sobre">A empresa Aion foi criada no dia 08 de agosto de 2022 com o intuito de desenvolver aplicações tecnológicas para resolver complicações na sociedade e ajudar
-                com as dificuldades de nossos clientes dando a eles opções mais viaveís e eficazes de acordo com suas necessidades.​</p>
+            <p class="conteudo-sobre">
+                A empresa Aion foi criada no dia 08 de agosto de 2022 com o intuito de desenvolver aplicações tecnológicas para resolver complicações na sociedade e ajudar
+                com as dificuldades de nossos clientes dando a eles opções mais viaveís e eficazes de acordo com suas necessidades.
+            </p>
         </div>
 
         <div class="oq-Buscamos">
@@ -251,6 +268,6 @@
         </div>
        
 
-        <!-- <script src="script.js"></script> -->
+        <script src="script.js"></script>
     </body>
 </html>

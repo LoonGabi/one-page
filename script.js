@@ -1,28 +1,54 @@
-// Obtém o elemento que deseja alterar a cor
-var elemento = document.getElementById("seu-elemento");
+//var elemento = document.getElementById("seu-elemento");
 
+// DEIXANDO A NAV BRANCA QUANDO ROLAR A PÁGINA
 const nav = document.querySelector(".header");
 
-// Adiciona um evento de rolagem ao objeto window
-window.addEventListener("scroll", function() {
-    // Obtém a posição vertical atual do usuário
+window.addEventListener("scroll", function() 
+{
     var posicaoScroll = window.scrollY;
 
-    // Define a posição em que deseja que a cor seja aplicada
-    var posicaoLimite = 100; // Exemplo: 200 pixels
+    var posicaoLimite = 20; 
 
-    // Verifica se a posição de rolagem é maior que a posição limite
-    if (posicaoScroll > posicaoLimite) {
-        // Aplica a cor desejada ao elemento
-        nav.style.backgroundColor = "#fff"; // Exemplo: vermelho
-        nav.style.width = "100vw";
-    } else {
-        // Remove a cor do nav (volta ao estado inicial)
-        nav.style.backgroundColor = ""; // Retorna à cor padrão ou vazio para remover qualquer cor definida
+    if (posicaoScroll > posicaoLimite) 
+    {
+        nav.style.backgroundColor = "#fff"; 
+        nav.style.borderBottom = "1px solid #3ec9c0";
+    } 
+    else 
+    {
+        nav.style.backgroundColor = ""; 
+        nav.style.borderBottom = "";
     }
 });
 
 
+// AJUSTANDO ROLAGEM DA PÁGINA
+function ajusteRolagem(e) 
+{
+    e.preventDefault();
+
+    const targetId = e.target.getAttribute('href'); 
+    const targetElement = document.querySelector(targetId); 
+    const nav = document.querySelector(".header");
+    const offset = nav.offsetHeight;   
+
+    if(targetElement) 
+    {  
+        const targetPosition = targetElement.offsetTop - offset; 
+        
+        window.scrollTo({
+            top: targetPosition,
+        });
+    }
+}
+
+// Associe a função de rolagem suave aos links da navbar
+const navLinks = document.querySelectorAll('.cabecalho-menu-itens a');
+
+navLinks.forEach(link => 
+{
+    link.addEventListener('click', ajusteRolagem);
+});
 
 
 

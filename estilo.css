@@ -17,8 +17,44 @@ body
 {
     background-color: #ffffff;
     overflow-x: hidden;
+    position: relative;
 }
 
+.seta-subir
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: #693786;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+    z-index: 10;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.seta-subir i
+{
+    color: #fff;
+    transition: all 0.5s ease;
+    z-index: 11;
+    font-size: 27px;
+}
+
+.seta-subir:hover
+{
+    background-color: #fff;
+    border: 1px solid #693786;
+}
+.seta-subir:hover > i
+{
+    color: #693786;
+}
 
 /*CABEÇALHO*/
 .header
@@ -27,11 +63,11 @@ body
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;  
-    /* height: 6rem;   */
+    width: 100vw;
     padding: 2rem;
-    /* position: fixed; */
-    transition: all 0.5s ease;
-    /* z-index: 9999; */
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: 9999;
 }
 .box-img-header /*LOGO*/
 {
@@ -86,6 +122,20 @@ ul
     /* height: 100vh; */
 }
 
+#check
+{
+    display: none;
+}
+.checkbtn 
+{
+	font-size: 25px;
+	color: #572873;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+    z-index: 100;
+}
+
 .apresentacao
 {
     display: flex;
@@ -94,7 +144,7 @@ ul
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 6rem 1rem 3rem 10rem;
+    padding: 13rem 1rem 3rem 10rem;
     gap: 1.5rem;
 }
 
@@ -165,25 +215,114 @@ ul
     border: 1px solid #7322a6;
     color: #7322a6;
 }
+
+/* ICONES */
 .imagens-icones 
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0.2rem;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .box-img-icone
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
-.imagens-icones img
+
+.box-img-icone i
 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    color: #fff;
+    font-size: 33px;
+    transition: all 0.5s ease;
 }
+
+#icon-instagram
+{
+    background-color: #693786;
+    border: 1px solid #693786;
+}
+
+#icon-instagram i
+{
+    font-size: 38px;
+}
+
+#icon-instagram:hover
+{
+    background-color: #fff;
+}
+
+#icon-instagram:hover > i
+{
+    color: #693786;
+}
+
+#icon-youtube
+{
+    background-color: #822020;
+    border: 1px solid #822020;
+}
+
+#icon-youtube:hover
+{
+    background-color: #fff;
+}
+
+#icon-youtube:hover > i
+{
+    color: #822020;
+}
+
+#icon-facebook
+{
+    background-color: #232b5a;
+    border: 1px solid #232b5a;
+}
+
+#icon-facebook:hover
+{
+    background-color: #fff;
+}
+
+#icon-facebook:hover > i
+{
+    color: #232b5a;
+}
+
+#icon-github 
+{
+    color: #1a1a1a;
+    font-size: 62px;
+}
+
+.icon-github
+{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.icon-github:hover
+{
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+}
+
+.icon-github:hover > #icon-github 
+{
+    color: #fff;
+}
+
 .img-apresentacao
 {
    width: 100%;
@@ -397,8 +536,7 @@ ul
 }
 .parte-externa:hover
 {
-    transform: translateY(-0.5rem);
-    margin-left: 2px;
+    transform: translateY(-10px);
 }
 .parte-interna-um
 {
@@ -1001,7 +1139,7 @@ form button:hover
 {
     .apresentacao
     {
-        padding: 4rem 1rem 3rem 10rem;
+        padding: 10rem 1rem 3rem 10rem;
     }
 }
 
@@ -1051,13 +1189,25 @@ form button:hover
         width: 80%;
         height: 18%;
     }
+    .box-img-icone i
+    {
+        font-size: 30px;
+    }
+    #icon-instagram i
+    {
+        font-size: 35px;
+    }
+    #icon-github
+    {
+        font-size: 56px;
+    }
 }
 
 @media(max-width: 1475px)
 {
     .apresentacao
     {
-        padding: 2rem 0rem 2rem 6.5rem;
+        padding: 8rem 0rem 2rem 6.5rem;
     }
 }
 
@@ -1111,6 +1261,21 @@ form button:hover
     form textarea
     {
         height: 7rem;
+    }
+
+    /* ICONES */
+    .box-img-icone i
+    {
+        font-size: 29px;
+    }
+
+    #icon-instagram i
+    {
+        font-size: 33px;
+    }
+    #icon-github 
+    {
+        font-size: 50px;
     }
 }
 
@@ -1195,13 +1360,27 @@ form button:hover
     {
         line-height: 3.7rem;
     }
+     /* ICONES */
+     .box-img-icone i
+     {
+         font-size: 23px;
+     }
+ 
+     #icon-instagram i
+     {
+         font-size: 27px;
+     }
+     #icon-github 
+     {
+         font-size: 41px;
+     }
 }
 
 @media(max-width: 920px)
 {
     .apresentacao
     {
-        padding: 4rem 4rem 2rem 4rem;
+        padding: 6rem 4rem 2rem 4rem;
     }
 }
 
@@ -1349,7 +1528,6 @@ form button:hover
         margin: 2rem;
     }
 
-    .apresentacao,
     .organizador-para-buscamos-1
     {
         padding: 2rem;
@@ -1370,10 +1548,6 @@ form button:hover
     {
         line-height: 1.6rem;
     }
-    .apresentacao
-    {
-        padding: 2rem;
-    }
     form input, form textarea
     {
         width: 70vw;
@@ -1391,10 +1565,6 @@ form button:hover
 
 @media(max-width: 486px)
 {
-    .header ul
-    {
-        display: none;
-    }
     .escritos-para-contato
     {
         flex-direction: column;
@@ -1405,6 +1575,37 @@ form button:hover
     .box-texto-info
     {
         align-items: center;
+    }
+    .checkbtn 
+    {
+		display: block;
+	}
+    .header
+    {
+        position: fixed;
+        justify-content: space-between;
+    }
+    .cabecalho-menu-itens
+    {
+        position: fixed;
+        padding: 5rem 0rem 0rem 2rem;
+        width: 40%;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        gap: 1.4rem;
+        height: 100vh;
+        background-color: #fff;
+        border-left: 1px solid #3ec9c0;
+        transition: all 0.5s ease;
+    }
+    #check:checked ~ .cabecalho-menu-itens
+    {
+		right: 0;
+	}
+    .apresentacao
+    {
+        padding: 6rem 2rem 2rem 2rem;
     }
 }
 
@@ -1454,6 +1655,38 @@ form button:hover
     {
         width: 35px;
         height: 35px;
+    }
+    /* ICONES */
+    .box-img-icone i
+    {
+        font-size: 20px;
+    }
+
+    #icon-instagram i
+    {
+        font-size: 24px;
+    }
+    #icon-github 
+    {
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 406px)
+{
+    .cabecalho-menu-itens
+    {
+        width: 50%;
+    }
+}
+
+@media(max-width: 360px)
+{
+    .cabecalho-menu-itens
+    {
+        width: 100%;
+        align-items: center;
+        padding: 6rem 0rem 0rem;
     }
 }
 
